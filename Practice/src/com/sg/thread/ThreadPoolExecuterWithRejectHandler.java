@@ -12,7 +12,8 @@ public class ThreadPoolExecuterWithRejectHandler {
     public static void main(String[] args) {
         ArrayBlockingQueue<Runnable> blockingQueue= new ArrayBlockingQueue<Runnable>(2);
         ThreadPoolExecutor executor
-                = new ThreadPoolExecutor( 2,4,10, TimeUnit.SECONDS,blockingQueue, Executors.defaultThreadFactory(), new ThreadPoolRejectHandler());
+                = new ThreadPoolExecutor( 2,4,10, TimeUnit.SECONDS,blockingQueue,
+                Executors.defaultThreadFactory(), new ThreadPoolRejectHandler());
         MyMonitorThread monitor = new MyMonitorThread(executor, 5);
         Thread monitorThread = new Thread(monitor);
         monitorThread.start();

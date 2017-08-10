@@ -1,0 +1,988 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+	<head>
+
+		<title>My favourite hibernate interview questions with answers?</title>
+        <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+        <link rel="stylesheet" type="text/css" href="/forums/style.jsp">
+<link href="/css/jl.css" rel="stylesheet" type="text/css" />
+<link href="/css/jlJive.css" rel="stylesheet" type="text/css" />
+<link href="/css/navmenu.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="top" href="/" title="Javalobby Home Page">
+		<link rel="up" href="/java/forums/f18032.html" title="Up to thread list">
+
+		
+		
+				<link rel="prev"
+							href="/java/forums/t105465.html"
+							title="Previous thread" >
+		
+
+		
+		
+
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS"
+         href="http://www.javalobby.org/rss/rssmessages.jspa?threadID=104442">
+
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+sfHover = function() {
+	var sfEls = document.getElementById("nav").getElementsByTagName("LI");
+	for (var i=0; i<sfEls.length; i++) {
+		sfEls[i].onmouseover=function() {
+			this.className+=" sfhover";
+		}
+		sfEls[i].onmouseout=function() {
+			this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+		}
+	}
+}
+if (document.all) { //MS IE
+	if (window.attachEvent) window.attachEvent("onload", sfHover);
+	else { //IE 5.2 Mac does not support attachEvent
+		var old = window.onload;
+		window.onload = function() { if (old) old(); sfHover(); }
+	}
+}
+//--><!]]></script>
+<!--[if IE]>
+<style>
+body {
+  height: 100%;
+  overflow: hidden;
+  font-size: 100%;
+  }
+div#wrap_outer {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  }
+div#glideDiv0 {
+  position: absolute;
+}
+#comments dd pre {
+	width: 100%;
+	overflow: scroll;
+}
+</style>
+<script type="text/javascript">
+onload = function() { wrap_outer.focus() }
+</script>
+<![endif]-->
+</head>
+    <body >
+    
+
+<div id="wrap_outer">
+<!-- TOP LEADERBOARD GOES HERE -->
+
+<div id="wrap_inner">
+<div id="header">
+	<div class="netbar">
+		<a href="http://www.javalobby.org/" title="Java & J2EE Programming community with Java forums, Java blogs, Java news & Java tutorials">Javalobby</a> |
+        <a href="http://www.eclipsezone.com/" title="Eclipse Developer and User Community">EclipseZone</a> |
+        <a href="http://www.javaforge.com/" title="Open Source Java Project Hosting">JavaForge</a> |
+		<a href="http://www.jroller.com/" title="Free Java Blogging community for Java & J2EE Developer blogs">JRoller</a> |
+		<a href="http://www.javablackbelt.com/" title="Java skill evaluation platform">JavaBlackBelt</a> |
+		<a href="http://www.jdocs.com/" title="Javadoc API docs for over 130 Java & J2EE libraries">JDocs</a> |
+        <a href="http://www.javacrawl.com/" title="RSS Portal for Java news & J2EE news">Javacrawl</a> |		
+        <a href="http://www.jugcentral.com/" title="Java User Group hosting & services for JUGs">JUGCentral</a> |
+		<a href="http://www.myjavaserver.com/" title="Free Java JSP & J2EE hosting for developers learning Java">MyJavaServer</a> |
+		<a href="http://www.dzone.com/advertise.jsp" title="Promote your products & services to Java developers"><b>ADVERTISE</b></a>
+	</div>
+	<div class="welcomebar">
+		
+				<form action="/forums/login.jspa" method="post" name="loginform">
+				Username/Email: <input type="text" name="username" size="20" maxlength="150" value="" tabindex="1" id="username01" />
+				Password: <input type="password" name="password" size="20" maxlength="150" value="" tabindex="2" id="password01" />
+				<input type="hidden" name="autoLogin" id="autoLogin01" value="true" />
+				<input type="hidden" name="successURL" id="successURL01" value="http://www.javalobby.org/java/forums/t104442.html" />
+
+				<a href="javascript:document.loginform.submit()">SIGN IN</a> | <a href="/account!default.jspa">JOIN NOW!</a>
+				</form>
+		
+	</div>
+	</div>
+<div id="navcontainer">
+	<ul id="nav">
+		<li><a href="/">Home</a></li>
+		<li><a href="#">Features</a>
+			<ul>
+				<li><a href="/forums/post!default.jspa?forumID=61">Submit&nbsp;an&nbsp;article</a></li>
+				<li><a href="/spotlights.jsp?view=all">Presentations and Articles</a></li>
+				<li><a href="/av/javapolis/">JavaPolis 2004 Online</a></li>
+                <li><a href="/av/javazone/">JavaZone 2005</a></li>
+
+				<li><a href="/java/forums/f17.html">Announcements</a></li>
+				<li><a href="/nl/index.jsp">Newsletters</a></li>
+
+			</ul>
+		</li>
+		<li><a href="/java/forums/c5601.html">Forums</a>
+			<ul>
+				<li><a href="/java/forums/c5601.html">Overview</a></li>
+				<li><a href="/forums/help.jspa">Help&nbsp;&amp;&nbsp;FAQ</a></li>
+				<li><a href="/notyet.jsp">Posting&nbsp;guidelines</a></li>
+				<li><a href="/notyet.jsp">Recent&nbsp;postings</a></li>
+				<li><a href="/notyet.jsp">Popular&nbsp;discussions</a></li>
+				
+				<li><a href="/forums/online.jspa">Who's&nbsp;online</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Blogs</a>
+			<ul>
+				<li><a href="http://www.jroller.com/">Popular&nbsp;blogs</a></li>
+				<li><a href="http://www.jroller.com/user.do?method=registerUser">Start&nbsp;your&nbsp;free&nbsp;blog</a></li>
+				<li><a href="http://www.jroller.com/">Recent&nbsp;blog&nbsp;entries</a></li>
+			</ul>
+		</li>
+		<li><a href="#">JL Network</a>
+			<ul>
+				<li><a href="http://www.javalobby.org/" title="Java J2SE J2EE Programming community with Java forums, Java blogs, Java news & Java tutorials">Javalobby.org</a></li>
+        <li><a href="http://www.javacrawl.com/" title="RSS Portal for Java news & J2EE news">Javacrawl.com</a></li>
+				<li><a href="http://www.jdocs.com/" title="Javadoc API docs for over 130 Java & J2EE libraries">JDocs.com</a></li>
+				<li><a href="http://www.jroller.com/" title="Free Java blog network for over 7,000 Java & J2EE Developer blogs">JRoller.com</a></li>
+				<li><a href="http://www.jugcentral.com/" title="Java User Group hosting & services for JUGs">JUGCentral.com</a></li>
+				<li><a href="http://www.myjavaserver.com/" title="Free Java JSP & J2EE hosting for developers learning Java">MyJavaServer.com</a></li>
+				<li><a href="#">Friends&nbsp;&amp;&nbsp;Partners</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Members&nbsp;Only</a>
+			<ul>
+				<li><a href="/forums/usersettings!default.jspa">Control&nbsp;Panel</a></li>
+				
+				<li><a href="/forums/accountEditNewsletter!default.jspa">Subscriptions</a></li>
+				<li><a href="/notyet.jsp">Downloads</a></li>
+				<li><a href="/notyet.jsp">Benefits</a></li>
+				<li><a href="/notyet.jsp">Special&nbsp;Offers</a></li>
+			</ul>
+		</li>
+		<li><a href="#">About JL</a>
+			<ul>
+				<li><a href="/about.jsp">Our&nbsp;story</a></li>
+				<li><a href="/network.jsp">Sites&nbsp;&amp;&nbsp;Services</a></li>
+				<li><a href="/notyet.jsp">In&nbsp;the&nbsp;News</a></li>
+				<li><a href="/privacy.jsp">Privacy&nbsp;policy</a></li>
+				<li><a href="/contact.jsp">Contact&nbsp;us</a></li>
+				<li><a href="/advertise.jsp">Advertising&nbsp;info</a></li>
+				<li><a href="/forums/help.jspa">FAQ</a></li>
+			</ul>
+		</li>
+	</ul>
+	<div style="clear: both;"> </div>
+</div>
+<div id="topLeaderboard">
+<!-- BEGIN ADVERTPRO ADVANCED CODE BLOCK -->
+
+<SCRIPT language="JavaScript" src="http://avpa.javalobby.org/servlet/view/javascript/zone?zid=32&pid=0&random=98005952" type="text/javascript"></SCRIPT>
+<NOSCRIPT>
+<IFRAME src="http://avpa.javalobby.org/servlet/view/html/zone?zid=32&pid=0&random=98005952" height="90" width="728" hspace="0" vspace="0" frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
+<A href="http://avpa.javalobby.org/servlet/click/zone?zid=32&pid=0&lookup=true&random=98005952" target="_top">
+<IMG src="http://avpa.javalobby.org/servlet/view/image/zone?zid=32&pid=0&random=98005952" height="90" width="728" hspace="0" vspace="0" border="0" alt="Click Here!">
+</A>
+</IFRAME>
+</NOSCRIPT>
+
+<!-- END ADVERTPRO ADVANCED CODE BLOCK -->
+</div>
+    
+<div id="rightColumn">
+
+
+<div class="jljive-portlet">
+  <div class="header">
+
+    <h1>Popular @ <a href="http://www.dzone.com">
+      <img src="/images/std/dzone_130x24.gif" alt="dzone.com: fresh links for developers"
+           title="dzone.com: fresh links for developers"
+           style="border:none;vertical-align:text-top;padding-top:2px;"></a></h1></div>
+  <ul class="dzone">
+    
+    
+      <li>
+        <a href="http://www.dzone.com/links/rss/eclipse_37_new_and_noteworthy.html" title="Eclipse 3.7 - New and Noteworthy">
+        Eclipse 3.7 - New and Noteworthy</a>
+        </li>
+    
+      <li>
+        <a href="http://www.dzone.com/links/rss/38_life_lessons_ive_learned_in_38_years.html" title="38 Life Lessons Ive Learned in 38 Years">
+        38 Life Lessons Ive Learned in 38 Years</a>
+        </li>
+    
+      <li>
+        <a href="http://www.dzone.com/links/rss/why_im_the_best_programmer_in_the_world.html" title="Why I'm The Best Programmer In The World*">
+        Why I'm The Best Programmer In The World*</a>
+        </li>
+    
+      <li>
+        <a href="http://www.dzone.com/links/rss/workers_leaving_the_googleplex.html" title="Workers leaving the Googleplex">
+        Workers leaving the Googleplex</a>
+        </li>
+    
+      <li>
+        <a href="http://www.dzone.com/links/rss/data_structure_visualizations.html" title="Data Structure Visualizations">
+        Data Structure Visualizations</a>
+        </li>
+    
+      <li>
+        <a href="http://www.dzone.com/links/rss/3_signs_that_youve_been_coding_too_much.html" title="3 Signs That Youve Been Coding Too Much">
+        3 Signs That Youve Been Coding Too Much</a>
+        </li>
+    
+      <li class="last">
+        <a href="http://www.dzone.com/links/rss/ghosts_in_the_machine_12_coding_languages_that_ne_3.html" title="Ghosts in the Machine: 12 Coding Languages That Never Took Off">
+        Ghosts in the Machine: 12 Coding Languages...</a>
+        </li>
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </ul>
+
+  <div class="footer">
+    <img src="/images/std/icons/write_16x16.gif" hspace="0" vspace="0" align="texttop"/>
+    <a href="http://www.dzone.com/links/add.html" class="post">Submit a story</a>
+    &nbsp;<img src="/images/std/icons/check_16x16.gif" hspace="0" vspace="0" align="texttop"/>
+    <a href="http://www.dzone.com/links/queue.html" class="post">Vote on new stories</a>
+  </div>
+</div>
+
+
+<div id="mpu">
+  <!-- BEGIN ADVERTPRO ADVANCED CODE BLOCK -->
+   <SCRIPT language="JavaScript" src="http://avpa.javalobby.org/servlet/view/javascript/zone?zid=33&pid=0&random=65477959" type="text/javascript"></SCRIPT>
+<NOSCRIPT>
+<IFRAME src="http://avpa.javalobby.org/servlet/view/html/zone?zid=33&pid=0&random=65477959" height="250" width="300" hspace="4" vspace="4" frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
+<A href="http://avpa.javalobby.org/servlet/click/zone?zid=33&pid=0&lookup=true&random=65477959" target="_top">
+<IMG src="http://avpa.javalobby.org/servlet/view/image/zone?zid=33&pid=0&random=65477959" height="250" width="300" hspace="4" vspace="4" border="0" alt="Support Javalobby, visit our sponsors">
+</A>
+</IFRAME>
+</NOSCRIPT>
+
+   <!-- END ADVERTPRO ADVANCED CODE BLOCK -->
+  </div> <!-- end mpu DIV -->
+
+<div class="jljive-portlet">
+	<div class="header">Forum Controls</div>
+		
+		
+
+		
+		
+
+		
+			
+		
+	<ul>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="/forums/post!reply.jspa?threadID=104442"
+	class="noborder"><img src="/images/std/icons/write_16x16.gif"
+	width="16" height="16" border="0"
+	alt="Reply to this Thread"></a> 
+<a href="/forums/post!reply.jspa?threadID=104442">Reply to this Thread</a></li>
+
+
+  
+
+<li><a href="/forums/search!default.jspa?objID=f18032"
+	class="noborder"><img src="images/search-16x16.gif" width="16"
+	height="16" border="0" alt="Search Forum"></a>
+ <a
+	href="/forums/search!default.jspa?objID=f18032">Search Forum</a></li>
+
+
+
+
+
+
+
+        <li>
+            <a href="/java/forums/f18032.html" class="noborder"
+             ><img src="images/arrow-left-16x16.gif" width="16" height="16" border="0" alt="Back to Thread List"></a>
+            
+            <a href="/java/forums/f18032.html"
+             >Back to Thread List</a></li>
+
+
+
+	</ul>
+              <div class="footer">
+                
+                Whos Online:
+
+                
+
+                
+                
+                        
+                        
+                165 guest(s), 0 user(s).
+
+                
+                <a href="/forums/online.jspa">More info &raquo;</a>
+            </div>
+
+</div>
+
+
+	
+
+
+
+
+		<div class="jljive-portlet">
+		<div class="header">Spotlight Features</div>
+		
+
+
+
+
+<div class="spotlight">
+
+
+</div>
+
+
+        <div class="footer"><a href="/spotlights.jsp">Read the Spotlight Archives</a></div>
+		</div>
+
+<!-- end rightColumn div --></div>
+
+<div id="leftColumn">
+     
+    
+		<span class="jljive-paginator">
+		
+		Replies:
+		3 -
+		
+		Pages:
+		1 &nbsp;
+
+		
+		</span>
+	
+	<br>
+	
+		<span class="jljive-paginator">
+			
+					
+					Threads:
+					[
+					
+							
+							<a href="/java/forums/t105465.html"
+							 >Previous</a>
+					
+					|
+					
+							
+							Next
+					
+					]
+			
+		</span>
+	
+    
+    <div id="comments">
+	<dl>
+		
+
+			
+				
+
+
+
+
+
+
+
+
+
+
+
+    
+
+		<div class="rootmsg">
+			<div class="rm_header">
+				<a name="92208831"></a>
+				<div class="msgControls">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        
+
+                        
+                        
+                        
+                        
+
+                            <td>&nbsp;</td>
+                            <td class="jive-icon">
+                                <a href="/forums/post!reply.jspa?messageID=92208831" title="Click to reply to this thread"
+                                 ><img src="/images/std/icons/write_16x16.gif" width="16" height="16" border="0" alt="Click to reply to this thread"></a>
+                            </td>
+                            <td class="jive-icon-label">
+                                <a href="/forums/post!reply.jspa?messageID=92208831"
+                                 title="Click to reply to this thread"
+                                 >Reply</a>
+                            </td>
+
+                        
+                    </tr>
+                    </table>
+        </div><h1>My favourite hibernate interview questions with answers?
+</h1>
+			
+				<h4>At 2:58 AM
+				on Dec 12, 2007, <a href="/forums/profile.jspa?userID=192378" class="author">akpillai</a>  wrote:</h4>
+			</div>
+			<style type="text/css">
+        div#smalljobs a.post {
+            font-size: 70%;
+            margin-left: 1em;
+            color: #933;
+        }
+             div#smalljobs ul {
+       margin: 0;
+                 padding: 0;
+                 list-style: none;
+     }
+     div#smalljobs li {
+       border-bottom: none;
+         margin: 0px 0.0em 0px 1.5em;
+         line-height: 140%;
+         overflow: hidden;
+         height: 1.4em;
+       padding: 0;
+     }
+     div#smalljobs {
+         padding-left: 1em;
+         padding-bottom: 0.5em;
+         padding-right: 1em;
+         margin-bottom: 1em;
+         clear: both;
+         background-color: #f8f8f8;
+     }
+    </style>
+     <div id="smalljobs" class="thread">
+       <h3><a href="http://jobs.dzone.com">Fresh Jobs for Developers</a> <a href="https://jobs.dzone.com/jobs/new" class="post">Post a job opportunity</a></h3>
+       <ul>
+      
+         
+         
+       
+       </ul>
+   </div>
+                    
+                    
+                 <div id="dzone_vote_widget" style="float: left; margin-right: 8px;">
+                <script language="javascript" src="http://www.dzone.com/widgets/zoneit.js"></script></div><b>Q. How will you configure Hibernate?
+</b><br><br><b>Answer:
+</b><br><br>The configuration files hibernate.cfg.xml (or hibernate.properties) and mapping files *.hbm.xml are used by the Configuration class to create (i.e. configure and bootstrap hibernate) the SessionFactory, which in turn creates the Session instances. Session instances are the primary interface for the persistence service. 
+<br><br>"	hibernate.cfg.xml (alternatively can use hibernate.properties): These two files are used to configure the hibernate sevice (connection driver class, connection URL, connection username, connection password, dialect etc). If both files are present in the classpath then hibernate.cfg.xml file overrides the settings found in the hibernate.properties file. 
+<br><br>"	Mapping files (*.hbm.xml):  These files are used to map persistent objects to a relational database. It is the best practice to store each object in an individual mapping file (i.e mapping file per class) because storing large number of persistent classes into one mapping file can be difficult to manage and maintain. The naming convention is to use the same name as the persistent (POJO) class name. For example Account.class will have a mapping file named Account.hbm.xml. Alternatively hibernate annotations can be used as part of your persistent class code instead of the *.hbm.xml files.
+<br><br><br><b>Q. What is a SessionFactory? Is it a thread-safe object?
+</b> 
+<br><br><b>Answer:
+</b><br><br>SessionFactory is Hibernates concept of a single datastore and is threadsafe so that many threads can access it concurrently and request for sessions and immutable cache of compiled mappings for a single database. A SessionFactory is usually only built once at startup. SessionFactory should be wrapped in some kind of singleton so that it can be easily accessed in an application code.
+<br><br>SessionFactory sessionFactory = new Configuration().configure().buildSessionfactory();
+<br><br><br><b>Q. What is a Session? Can you share a session object between different theads?
+</b> 
+<br><br><b>Answer:
+</b><br><br>Session is a light weight and a non-threadsafe object (No, you cannot share it between threads) that represents a single unit-of-work with the database. Sessions are opened by a SessionFactory and then are closed when all work is complete. Session is the primary interface for the persistence service. A session obtains a database connection lazily (i.e. only when required). To avoid creating too many sessions ThreadLocal class can be used as shown below to get the current session no matter how many times you make call to the currentSession() method.
+<br><br>&
+<br>public class HibernateUtil {
+<br> &
+<br>public static final ThreadLocal local = new ThreadLocal();
+<br><br>public static Session currentSession() throws HibernateException {
+<br>	Session session = (Session) local.get();
+<br>	//open a new session if this thread has no session
+<br>	if(session == null) {
+<br>		session = sessionFactory.openSession();
+<br>		local.set(session); 
+<br>	}
+<br>	return session;
+<br>}
+<br>}
+<br><br>It is also vital that you close your session after your unit of work completes. Note: Keep your Hibernate Session API handy.
+<br><br><br><b>Q. What are the benefits of detached objects?
+</b> 
+<br><br><b>Answer:
+</b><br><br><br>Detached objects can be passed across layers all the way up to the presentation layer without having to use any DTOs (Data Transfer Objects). You can later on re-attach the detached objects to another session.
+<br><br><b>Q. What are the pros and cons of detached objects?
+</b> 
+<br><br><b>Answer:
+</b><br><br><b>Pros:
+</b><br><br>"	When long transactions are required due to user think-time, it is the best practice to break the long transaction up into two or more transactions. You can use detached objects from the first transaction to carry data all the way up to the presentation layer. These detached objects get modified outside a transaction and later on re-attached to a new transaction via another session.   
+<br><br><br><b>Cons
+</b><br><br>"	In general, working with detached objects is quite cumbersome, and better to not clutter up the session with them if possible. It is better to discard them and re-fetch them on subsequent requests. This approach is not only more portable but also more efficient because - the objects hang around in Hibernate's cache anyway.
+<br><br>"    Also from pure rich domain driven design perspective it is recommended to use DTOs (DataTransferObjects) and DOs (DomainObjects) to maintain the separation between Service and UI tiers.	 
+<br><br><br><b>Q. How does Hibernate distinguish between transient (i.e. newly instantiated) and detached objects?
+</b><br><br><b>Answer
+</b><br><br>"	Hibernate uses the version property, if there is one. 
+<br>"	If not uses the identifier value. No identifier value means a new object. This does work only for Hibernate managed surrogate keys. Does not work for natural keys and assigned (i.e. not managed by Hibernate) surrogate keys.
+<br>"	Write your own strategy with Interceptor.isUnsaved().
+<br><br> 
+<br><br>-- More Java/J2EE Q&#38;A at <a href="http://www.lulu.com/java-success" target="_blank">http://www.lulu.com/java-success</a> ---
+
+      <div class="rm_footer">
+         <!-- BEGIN ADVERTPRO ADVANCED CODE BLOCK -->
+          <span style="float:right"> <SCRIPT language="JavaScript" src="http://avpa.javalobby.org/servlet/view/javascript/zone?zid=71&pid=0&random=95925246" type="text/javascript"></SCRIPT>
+<NOSCRIPT>
+<IFRAME src="http://avpa.javalobby.org/servlet/view/html/zone?zid=71&pid=0&random=95925246" height="60" width="234" hspace="4" vspace="4" frameborder="0" align="right" marginwidth="0" marginheight="0" scrolling="no">
+<A href="http://avpa.javalobby.org/servlet/click/zone?zid=71&pid=0&lookup=true&random=95925246" target="_top">
+<IMG src="http://avpa.javalobby.org/servlet/view/image/zone?zid=71&pid=0&random=95925246" height="60" width="234" hspace="4" vspace="4" border="0" alt="Support Javalobby, visit our sponsors" align="right">
+</A>
+</IFRAME>
+</NOSCRIPT>
+</span>
+          <!--<a href="http://avpa.javalobby.org/servlet/click/zone?zid=71&pid=0&lookup=true&position=1" target="_top">
+<img src="http://avpa.javalobby.org/servlet/view/banner/image/zone?zid=71&pid=0&position=1" height="60" width="234" hspace="0" vspace="4" align="right" border="0" alt="Click Here!">
+</a>-->   <!-- END ADVERTPRO ADVANCED CODE BLOCK -->
+
+				
+				<h3>3 replies
+					
+							 so far
+							
+							<span class="postYours">(<a href="/forums/post!reply.jspa?threadID=104442" style="border:none"
+							 ><img src="/images/std/icons/write_16x16.gif" title="Reply to this Thread"
+							 width="16" height="16" ></a>
+							<a href="/forums/post!reply.jspa?threadID=104442"
+							 >Post your own</a>)</span>
+					
+				</h3>
+				
+		</div>
+		</div>
+
+
+                <!-- Text ad at top of right column -->
+                
+	
+
+            
+
+		
+
+			
+				
+
+
+
+
+
+
+
+
+
+
+<a name="92218716"></a>
+<dt id="reply1" class="alt"><a href="#92218716"
+																				class="postno"
+																				title="Permlink to this reply">1
+	.</a>
+		<span class="replyInfo">At 10:34 PM
+		on Dec 20, 2007, <a
+				href="/forums/profile.jspa?userID=192378"
+				class="author">akpillai</a>
+
+
+            
+ wrote:</span>
+</dt>
+<dd class="alt withSig">
+	<div class="msgControls">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        
+
+                        
+                        
+                        
+                        
+
+                            <td>&nbsp;</td>
+                            <td class="jive-icon">
+                                <a href="/forums/post!reply.jspa?messageID=92218716" title="Click to reply to this thread"
+                                 ><img src="/images/std/icons/write_16x16.gif" width="16" height="16" border="0" alt="Click to reply to this thread"></a>
+                            </td>
+                            <td class="jive-icon-label">
+                                <a href="/forums/post!reply.jspa?messageID=92218716"
+                                 title="Click to reply to this thread"
+                                 >Reply</a>
+                            </td>
+
+                        
+                    </tr>
+                    </table>
+        </div>
+	<h3>Re: My favourite hibernate interview questions with answers?
+</h3>
+	I have some more on this ....
+<br><br><br><b>Q.  What is the difference between the session.get() method and the session.load() method?
+</b><br><br>Both the session.get(..) and session.load() methods create a persistent object by loading the required object from the database. But if there was not such object in the database then the method session.load(..) throws an exception whereas session.get(&) returns null.
+<br><br><br><b>Q. What is the difference between the session.update() method and the session.lock() method?
+</b><br><br>Both of these methods and saveOrUpdate() method are intended for reattaching a detached object. The session.lock() method simply reattaches the object to the session without checking or updating the database on the assumption that the database in sync with the detached object. It is the best practice to use either session.update(..) or session.saveOrUpdate(). Use session.lock() only if you are absolutely sure that the detached object is in sync with your detached object or if it does not matter because you will be overwriting all the columns that would have changed later on within the same transaction.  
+<br><br><b>Note:
+</b> When you reattach detached objects you need to make sure that the dependent objects are reatched as well.
+<br><br><b>Q. How would you reatach detached objects to a session when the same object has already been  loaded into the session?
+</b><br><br>You can use the session.merge() method call.
+<br><br><br><b>Q. What are the general considerations or best practices for defining your Hibernate persistent classes?
+</b><br><br><br>1.You must have a default no-argument constructor for your persistent classes and there should be getXXX() (i.e accessor/getter) and setXXX( i.e. mutator/setter) methods for all your persistable instance variables. 
+<br><br>2.You should implement the equals() and hashCode() methods based on your business key and it is important not to use the id field in your equals() and hashCode() definition if the id field is a surrogate key (i.e. Hibernate managed identifier). This is because the Hibernate only generates and sets the field when saving the object. 
+<br><br><br>3. It is recommended to implement the Serializable interface. This is potentially useful if you want to migrate around a multi-processor cluster.
+<br><br>4.The persistent class should not be final because if it is final then lazy loading cannot be used by creating proxy objects.
+<br><br>5.Use XDoclet tags for generating your *.hbm.xml files or Annotations (JDK 1.5 onwards), which are less verbose than *.hbm.xml files.
+<br><br><br>Would like to hear more questions and answers from the readers.....................
+
+
+	
+</dd>
+
+
+<dd class="signature alt">
+	<a href="http://www.lulu.com/java-success">Java J2EE Job Interview Questions With Answers</a>
+
+|
+
+<a href="http://www.lulu.com/content/192463">Java J2EE core concepts and Key Areas</a></dd>
+
+
+
+
+
+			
+
+		
+
+			
+				
+
+
+
+
+
+
+
+
+
+
+<a name="92218720"></a>
+<dt id="reply2" class="alt2"><a href="#92218720"
+																				class="postno"
+																				title="Permlink to this reply">2
+	.</a>
+		<span class="replyInfo">At 12:03 AM
+		on Dec 21, 2007, <a
+				href="/forums/profile.jspa?userID=262755"
+				class="author">patence</a>
+
+
+            
+ wrote:</span>
+</dt>
+<dd class="alt2 withSig">
+	<div class="msgControls">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        
+
+                        
+                        
+                        
+                        
+
+                            <td>&nbsp;</td>
+                            <td class="jive-icon">
+                                <a href="/forums/post!reply.jspa?messageID=92218720" title="Click to reply to this thread"
+                                 ><img src="/images/std/icons/write_16x16.gif" width="16" height="16" border="0" alt="Click to reply to this thread"></a>
+                            </td>
+                            <td class="jive-icon-label">
+                                <a href="/forums/post!reply.jspa?messageID=92218720"
+                                 title="Click to reply to this thread"
+                                 >Reply</a>
+                            </td>
+
+                        
+                    </tr>
+                    </table>
+        </div>
+	<h3>Re: My favourite hibernate interview questions with answers?
+</h3>
+	Thanks fore sharing, these questions are very uesful.
+
+
+	
+</dd>
+
+
+<dd class="signature alt2">
+	<a href="http://www.java-forums.org/java-announcements/">Java  Software</a></dd>
+
+
+
+
+
+			
+
+		
+
+			
+				
+
+
+
+
+
+
+
+
+
+
+<a name="92222328"></a>
+<dt id="reply3" class="alt"><a href="#92222328"
+																				class="postno"
+																				title="Permlink to this reply">3
+	.</a>
+		<span class="replyInfo">At 4:38 PM
+		on Jan 15, 2008, <a
+				href="/forums/profile.jspa?userID=211762"
+				class="author">Alex Baranov</a>
+
+
+            
+ wrote:</span>
+</dt>
+<dd class="alt">
+	<div class="msgControls">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        
+
+                        
+                        
+                        
+                        
+
+                            <td>&nbsp;</td>
+                            <td class="jive-icon">
+                                <a href="/forums/post!reply.jspa?messageID=92222328" title="Click to reply to this thread"
+                                 ><img src="/images/std/icons/write_16x16.gif" width="16" height="16" border="0" alt="Click to reply to this thread"></a>
+                            </td>
+                            <td class="jive-icon-label">
+                                <a href="/forums/post!reply.jspa?messageID=92222328"
+                                 title="Click to reply to this thread"
+                                 >Reply</a>
+                            </td>
+
+                        
+                    </tr>
+                    </table>
+        </div>
+	<h3>Re: My favourite hibernate interview questions with answers?
+</h3>
+	Below you can find some useful questions and answers:
+<br><a href="http://www.hibernate.org/118.html" target="_blank">http://www.hibernate.org/118.html</a>
+
+
+	
+</dd>
+
+
+
+
+
+
+			
+
+		
+	</dl>
+	</div>
+
+</div>
+
+<div class="jive-message-list-footer">
+	
+		<span class="jljive-paginator">
+		
+		Replies:
+		3 -
+		
+		Pages:
+		1 &nbsp;
+
+		
+		</span>
+	
+	
+		<span class="jljive-paginator">
+			
+					
+					Threads:
+					[
+					
+							
+							<a href="/java/forums/t105465.html"
+							 >Previous</a>
+					
+					|
+					
+							
+							Next
+					
+					]
+			
+		</span>
+	
+</div>
+
+
+    <br>
+    <a href="/rss/rssmessages.jspa?threadID=104442"
+    title="Point your RSS reader here for a feed of the latest messages in this thread"><img src="images/rss-24x16.gif"
+    width="24" height="14" border="0" alt="thread.rss_message"></a>
+
+
+<!-- layers that slide go here.
+		 Be sure to include id for each layer in style sheet in head -->
+<div id="glideDiv0">
+	
+			
+			<a href="/forums/post!reply.jspa?threadID=104442"
+			 ><img src="/images/std/icons/write.gif" title="Reply to this Thread"
+			 width="24" height="24" align="right"></a>
+	
+
+	
+	<a href="/"
+	><img src="/images/std/icons/home.gif" title="Home"
+		width="24" height="24" align="right"></a>
+
+	
+	<a href="/java/forums/f18032.html"
+	><img src="/images/std/icons/folder_up.gif" title="Up to Thread List"
+		width="24" height="24" align="right"></a>
+
+	
+	
+			<img src="/images/std/icons/next_thread_off.gif" title="No Next Thread" width="24" height="24" align="right">
+	
+
+	
+	
+			<img src="/images/std/icons/next_messages_off.gif" title="No Additional Replies" width="24" height="24" align="right">
+	
+
+	
+	
+			<img src="/images/std/icons/prev_messages_off.gif" title="No Previous Replies" width="24" height="24" align="right">
+	
+
+	
+	
+			<a href="/java/forums/t105465.html"
+			 ><img src="/images/std/icons/prev_thread.gif" title="Previous Thread" width="24" height="24" align="right"></a>
+	
+
+	
+	
+			<img src="/images/std/icons/write_off.gif" title="No Email this thread to a friend" width="24" height="24" align="right">
+	
+
+</div>
+<br/><br/>
+<div id="footer">
+	<!-- BEGIN ADVERTPRO ADVANCED CODE BLOCK -->
+ <SCRIPT language="JavaScript" src="http://avpa.javalobby.org/servlet/view/javascript/zone?zid=24&pid=0&random=99005740" type="text/javascript"></SCRIPT>
+<NOSCRIPT>
+<IFRAME src="http://avpa.javalobby.org/servlet/view/html/zone?zid=24&pid=0&random=99005740" height="60" width="468" hspace="0" vspace="0" frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
+<A href="http://avpa.javalobby.org/servlet/click/zone?zid=24&pid=0&lookup=true&random=99005740" target="_top">
+<IMG src="http://avpa.javalobby.org/servlet/view/image/zone?zid=24&pid=0&random=99005740" height="60" width="468" hspace="0" vspace="0" border="0" alt="Click Here!">
+</A>
+</IFRAME>
+</NOSCRIPT>
+
+ <!-- END ADVERTPRO ADVANCED CODE BLOCK -->
+<a href="http://www.spreadfirefox.com/?q=affiliates&amp;id=29092&amp;t=64" class="noborder"><img border="0" alt="Get Firefox!" title="Get Firefox!" src="/images/logos/get_firefox.gif"/></a>
+&nbsp;<a href="http://www.jivesoftware.com/poweredby?src=javalobby" style="font-size: 11px">Powered by Jive Software</a> <a href="http://www.caucho.com"><img border="0"
+                             alt="Powered by Caucho Resin!"
+                             title="Powed by Caucho Resin!"
+                             src="/images/logos/resin-powered.gif"/></a>
+<!-- end footer div--></div>
+
+<!-- end wrap_inner div--></div>
+<!-- end wrap_outer div--></div>
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-410289-4";
+urchinTracker();
+</script>
+    <!-- Start Quantcast tag -->
+    <script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+    <script type="text/javascript">
+    _qacct="p-ebK_XdQH1HeLo";quantserve();</script>
+    <noscript>
+    <img src="http://pixel.quantserve.com/pixel/p-ebK_XdQH1HeLo.gif" style="display: none" height="1" width="1" alt="Quantcast"/></noscript>
+    <!-- End Quantcast tag -->
+    
+</body>
+</html>

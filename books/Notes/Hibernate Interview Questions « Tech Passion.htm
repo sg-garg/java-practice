@@ -1,0 +1,1057 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head profile="http://gmpg.org/xfn/11">
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Hibernate Interview Questions « Tech Passion</title>
+
+	<link rel="stylesheet" href="Hibernate%20Interview%20Questions%20%C2%AB%20Tech%20Passion_files/style.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="Hibernate%20Interview%20Questions%20%C2%AB%20Tech%20Passion_files/isecore.css" type="text/css" media="screen">
+	<link rel="pingback" href="http://techpassion.wordpress.com/xmlrpc.php">
+
+	<link rel="alternate" type="application/rss+xml" title="Tech Passion » Feed" href="http://techpassion.wordpress.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Tech Passion » Comments Feed" href="http://techpassion.wordpress.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Tech Passion » Hibernate Interview&nbsp;Questions Comments Feed" href="http://techpassion.wordpress.com/2009/05/30/hibernate-interview-questions/feed/">
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel="stylesheet" href="Hibernate%20Interview%20Questions%20%C2%AB%20Tech%20Passion_files/global.css" type="text/css">
+<script type="text/javascript" src="Hibernate%20Interview%20Questions%20%C2%AB%20Tech%20Passion_files/l10n.js"></script>
+<script type="text/javascript" src="Hibernate%20Interview%20Questions%20%C2%AB%20Tech%20Passion_files/jquery.js"></script>
+<script type="text/javascript" src="Hibernate%20Interview%20Questions%20%C2%AB%20Tech%20Passion_files/comment-reply.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://techpassion.wordpress.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://techpassion.wordpress.com/wp-includes/wlwmanifest.xml"> 
+<link rel="index" title="Tech Passion" href="http://techpassion.wordpress.com/">
+<link rel="prev" title="JSF Interview&nbsp;Questions" href="http://techpassion.wordpress.com/2009/05/29/jsf-interview-questions/">
+<link rel="next" title="XHTML, CSS &amp; JavaScript Web Developer Applicant&nbsp;Questions" href="http://techpassion.wordpress.com/2009/06/02/xhtml-css-javascript-web-developer-applicant-questions/">
+<meta name="generator" content="WordPress.com">
+<link rel="canonical" href="http://techpassion.wordpress.com/2009/05/30/hibernate-interview-questions/">
+<link rel="shortlink" href="http://wp.me/pp7Zq-1e">
+<link rel="shortcut icon" type="image/x-icon" href="http://s1.wp.com/i/favicon-stacked.ico?m=1284002170g" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" type="image/x-icon" href="http://s1.wp.com/i/favicon-stacked.ico?m=1284002170g" sizes="16x16 24x24 32x32 48x48">
+<link rel="apple-touch-icon" href="http://s0.wp.com/wp-content/themes/h4/i/webclip.png?m=1250548519g">
+	<style type="text/css">
+	/* <![CDATA[ */
+				div#likes { margin-top: 15px; }
+		.like-button { border: 1px solid #eee; padding: 2px 6px; font-size: 13px; font-family: arial, tahoma, sans-serif; }
+		#wpl-likebox { clear: left; font-size: 11px; font-family: arial, tahoma, verdana, sans-serif !important; min-height: 30px; margin: 10px 0 !important; padding: 5px 0 10px 0 !important; }
+		#wpl-button { float: left; background: url( /i/buttonbg.png ) top left repeat-x; margin-right: 7px; border: 1px solid #d4d4d4; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+		#wpl-button a { color: #666 !important; line-height: 130% !important; text-decoration: none !important; outline: none; float: left; padding: 3px 6px 2px 24px !important; font-size: 11px !important; background: url( /i/likestar.png ) 6px 49.8% no-repeat; }
+		#wpl-button.liked { background: #feffce; border: 1px solid #f3e389; }
+		#wpl-button.liked a { color: #ba871b !important; }
+		#wpl-likebox #wpl-count { min-height: 25px; line-height: 130% !important; float: left; padding-top: 4px; }
+		#wpl-likebox #wpl-avatars { clear: left; max-height: 98px; overflow: hidden; margin-top: 15px; line-height: 130% !important; }
+		#wpl-likebox #wpl-avatars img { border: none !important; }
+		#wpl-likebox #wpl-mustlogin { line-height: 14px !important; font-size: 11px; clear: left; margin-top: 5px; background: #f0f0f0; padding: 10px; width: 65%; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+		#wpl-likebox #wpl-mustlogin a { color: #888; text-decoration: underline; }
+		#wpl-likebox #wpl-mustlogin p { margin: 5px 0; padding: 0 }
+		#wpl-likebox #wpl-mustlogin input.input { padding: 2px; background: #fff; font-size: 11px; font-family: inherit; border: 1px solid #ccc; -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset; -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset; line-height: 12px; }
+		#wpl-likebox #wpl-mustlogin input#wp-submit { border: 1px solid #ccc; font-size: 11px; background: #fafafa; repeat-x; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; padding: 2px 4px !important; line-height: 12px; }
+		#wpl-likebox #wpl-mustlogin label { position: relative; cursor: text; }
+		#wpl-likebox #wpl-mustlogin label span { position: absolute; top: 0px; left: 5px; padding: 0 !important; }
+		#wpl-likebox #wpl-mustlogin label span { top /*\**/: -10px\9; }
+	/* ]]> */
+	</style>
+	<link rel="openid.server" href="http://techpassion.wordpress.com/?openidserver=1">
+<link rel="openid.delegate" href="http://techpassion.wordpress.com/">
+<link rel="search" type="application/opensearchdescription+xml" href="http://techpassion.wordpress.com/osd.xml" title="Tech Passion">
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com">
+	<script type="text/javascript" charset="utf-8">
+		try{
+			var id = location.hash.match( /\#\!\/entry\/(\d+)/ )[1];
+			if ( id ) {
+				window.location = "http://techpassion.wordpress.com?p=" + id;
+			};
+		}catch( error ){
+		}
+	</script>		
+<meta name="application-name" content="Tech Passion"><meta name="msapplication-window" content="width=device-width;height=device-height"><meta name="msapplication-tooltip" content="Articles, Tutorials, Interview Questions on Java, J2EE, Open Source Java Frameworks (Struts, Struts2, Spring, Hibernate, MyFaces), Javascript Libraries, CSS"><meta name="msapplication-task" content="name=Subscribe;action-uri=http://techpassion.wordpress.com/feed/;icon-uri=http://s1.wp.com/i/favicon-stacked.ico"><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=http://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico">
+<script type="text/javascript" src="Hibernate%20Interview%20Questions%20%C2%AB%20Tech%20Passion_files/google_service.js">
+</script>
+<script type="text/javascript">
+GS_googleAddAdSenseService("ca-pub-3443918307802676");
+GS_googleEnableAllServices();
+</script><script src="Hibernate%20Interview%20Questions%20%C2%AB%20Tech%20Passion_files/google_ads2.js"></script>
+<script type="text/javascript">
+GA_googleAddSlot("ca-pub-3443918307802676", "wpcom_below_post");
+</script>
+<script type="text/javascript">
+GA_googleFetchAds();
+</script><script type="text/javascript"> 
+	window.google_analytics_uacct = "UA-52447-2"; 
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-52447-2']);
+	_gaq.push(['_setDomainName', 'wordpress.com']);
+	_gaq.push(['_initData']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+	})();
+</script><script src="Hibernate%20Interview%20Questions%20%C2%AB%20Tech%20Passion_files/ga.js" async="" type="text/javascript"></script>
+
+<link rel="stylesheet" type="text/css" id="gravatar-card-css" href="Hibernate%20Interview%20Questions%20%C2%AB%20Tech%20Passion_files/hovercard.css"><link rel="stylesheet" type="text/css" id="gravatar-card-services-css" href="Hibernate%20Interview%20Questions%20%C2%AB%20Tech%20Passion_files/services.css"></head><body>
+
+<div id="container">
+	<div id="sitename">
+		<h1><a href="http://techpassion.wordpress.com/">Tech Passion</a></h1>
+		<h2>Articles, Tutorials, Interview Questions on Java, J2EE, Open 
+Source Java Frameworks (Struts, Struts2, Spring, Hibernate, MyFaces), 
+Javascript Libraries, CSS</h2>
+	</div>
+
+	<div id="mainmenu">
+			<ul class="level1">
+		<li><a href="http://techpassion.wordpress.com/">Home</a></li>
+		<li class="page_item page-item-2"><a href="http://techpassion.wordpress.com/about/" title="About">About</a></li>
+	</ul>
+	</div>
+
+<div id="wrap">
+<div id="leftside">
+
+	<ul>
+
+<li id="categories-2" class="widget widget_categories"><h2 class="widgettitle">Categories</h2>
+		<ul>
+			<li class="cat-item cat-item-49273"><a href="http://techpassion.wordpress.com/category/java/core-java/" title="Everything related to core java...">Core Java</a>
+</li>
+	<li class="cat-item cat-item-330698"><a href="http://techpassion.wordpress.com/category/java/enterprise-java/" title="enterprise java technology..servlet, jsp, ejb, jdbc, jms, rmi, jdo, jaxp, jaxb etc..">Enterprise java</a>
+</li>
+	<li class="cat-item cat-item-3112213"><a href="http://techpassion.wordpress.com/category/hibernate-framework/" title="Hibernate Tutorial &amp; Interview Questions">Hibernate Framework</a>
+</li>
+	<li class="cat-item cat-item-1017"><a href="http://techpassion.wordpress.com/category/java/" title="Java Technology..">Java</a>
+</li>
+	<li class="cat-item cat-item-21149433"><a href="http://techpassion.wordpress.com/category/javascript-css-htmlxhtml/" title="javascript, and Jquery">Javascript, CSS, HTML/XHTML</a>
+</li>
+	<li class="cat-item cat-item-18742806"><a href="http://techpassion.wordpress.com/category/jboss-seam-framework/" title="View all posts filed under JBoss Seam Framework">JBoss Seam Framework</a>
+</li>
+	<li class="cat-item cat-item-51468"><a href="http://techpassion.wordpress.com/category/java/enterprise-java/jsf/" title="JSF Framework Tutorial &amp; Interview Questions">JSF</a>
+</li>
+	<li class="cat-item cat-item-21149783"><a href="http://techpassion.wordpress.com/category/soa-esb-web-services/" title="View all posts filed under SOA ESB Web Services">SOA ESB Web Services</a>
+</li>
+	<li class="cat-item cat-item-68724"><a href="http://techpassion.wordpress.com/category/spring-framework/" title="View all posts filed under Spring Framework">Spring Framework</a>
+</li>
+	<li class="cat-item cat-item-12627241"><a href="http://techpassion.wordpress.com/category/struts-framework/" title="View all posts filed under Struts Framework">Struts Framework</a>
+</li>
+		</ul>
+</li>
+<li id="wp_tag_cloud" class="widget wp_widget_tag_cloud"><h2 class="widgettitle">Popular Tags</h2>
+<div style="overflow: hidden;"><a href="http://techpassion.wordpress.com/tag/css/" class="tag-link-169" title="2 topics" style="font-size: 13.25pt;">CSS</a>
+<a href="http://techpassion.wordpress.com/tag/ejb-interview-questions/" class="tag-link-19809002" title="2 topics" style="font-size: 13.25pt;">EJB Interview Questions</a>
+<a href="http://techpassion.wordpress.com/tag/ejb-questions/" class="tag-link-20995776" title="1 topic" style="font-size: 8pt;">EJB Questions</a>
+<a href="http://techpassion.wordpress.com/tag/hibernate/" class="tag-link-17907" title="1 topic" style="font-size: 8pt;">Hibernate</a>
+<a href="http://techpassion.wordpress.com/tag/j2ee/" class="tag-link-8689" title="1 topic" style="font-size: 8pt;">J2EE</a>
+<a href="http://techpassion.wordpress.com/tag/java-interview-questions/" class="tag-link-453521" title="5 topics" style="font-size: 22pt;">Java Interview Questions</a>
+<a href="http://techpassion.wordpress.com/tag/javascipt/" class="tag-link-1668778" title="1 topic" style="font-size: 8pt;">javascipt</a>
+<a href="http://techpassion.wordpress.com/tag/javascript/" class="tag-link-457" title="1 topic" style="font-size: 8pt;">Javascript</a>
+<a href="http://techpassion.wordpress.com/tag/java-thread-questions/" class="tag-link-20995898" title="1 topic" style="font-size: 8pt;">Java Thread Questions</a>
+<a href="http://techpassion.wordpress.com/tag/jbossseam/" class="tag-link-21149687" title="1 topic" style="font-size: 8pt;">JBossSeam</a>
+<a href="http://techpassion.wordpress.com/tag/jms/" class="tag-link-254692" title="1 topic" style="font-size: 8pt;">JMS</a>
+<a href="http://techpassion.wordpress.com/tag/jsf/" class="tag-link-51468" title="1 topic" style="font-size: 8pt;">JSF</a>
+<a href="http://techpassion.wordpress.com/tag/jsp/" class="tag-link-12917" title="2 topics" style="font-size: 13.25pt;">JSP</a>
+<a href="http://techpassion.wordpress.com/tag/servlet/" class="tag-link-68800" title="1 topic" style="font-size: 8pt;">Servlet</a>
+<a href="http://techpassion.wordpress.com/tag/soa/" class="tag-link-11271" title="1 topic" style="font-size: 8pt;">SOA</a>
+<a href="http://techpassion.wordpress.com/tag/spring-framework/" class="tag-link-68724" title="1 topic" style="font-size: 8pt;">Spring Framework</a>
+<a href="http://techpassion.wordpress.com/tag/struts/" class="tag-link-28511" title="2 topics" style="font-size: 13.25pt;">Struts</a>
+<a href="http://techpassion.wordpress.com/tag/struts2/" class="tag-link-305306" title="1 topic" style="font-size: 8pt;">Struts2</a>
+<a href="http://techpassion.wordpress.com/tag/struts-framework/" class="tag-link-12627241" title="1 topic" style="font-size: 8pt;">Struts Framework</a>
+<a href="http://techpassion.wordpress.com/tag/xhtml/" class="tag-link-1248" title="1 topic" style="font-size: 8pt;">XHTML</a></div></li>
+<li id="archives-3" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>
+		<ul>
+			<li><a href="http://techpassion.wordpress.com/2009/07/" title="July 2009">July 2009</a></li>
+	<li><a href="http://techpassion.wordpress.com/2009/06/" title="June 2009">June 2009</a></li>
+	<li><a href="http://techpassion.wordpress.com/2009/05/" title="May 2009">May 2009</a></li>
+		</ul>
+</li>
+<li id="text-3" class="widget widget_text">			<div class="textwidget">
+
+
+</div>
+		</li>
+		<li id="blog-stats" class="widget widget_statscounter">			<h2 class="widgettitle">Blog Stats</h2>
+			<ul>
+			<li>22,011 hits</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<!-- Right Sidebar Template -->
+<div id="rightside">
+	<ul>
+	<li id="meta-3" class="widget widget_meta"><h2 class="widgettitle">Meta</h2>
+			<ul>
+			<li><a href="http://techpassion.wordpress.com/wp-login.php?action=register">Register</a></li>			<li><a href="http://techpassion.wordpress.com/wp-login.php">Log in</a></li>
+			<li><a href="http://techpassion.wordpress.com/feed/" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://techpassion.wordpress.com/comments/feed/" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://wordpress.com/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.com</a></li>
+						</ul>
+</li>
+<li id="linkcat-1356" class="widget widget_links"><h2 class="widgettitle">Blogroll</h2>
+
+	<ul class="xoxo blogroll">
+<li><a href="http://www.javacamp.org/designPattern/" title="Core Design Patterns">Core Design Patterns</a></li>
+<li><a href="http://java.sun.com/blueprints/corej2eepatterns/index.html" title="Core J2EE Patterns">Core J2EE Patterns</a></li>
+<li><a href="http://www.javapassion.com/" title="Free online courses (duration 4 to 5 months) that are being taught by Sang Shin">Free Java/J2EE Classes from Sun</a></li>
+<li><a href="http://java.sun.com/javaee/reference/tutorials/index.jsp" title="A practical guide for programmers with hundreds of complete, working examples and dozens of trails–groups of lessons on a particular subject.">Java EE Tutorials</a></li>
+<li><a href="http://java.sun.com/blueprints/enterprise/index.html" title="Guidelines, Patterns, and code for end-to-end Java applications.">Java/J2EE Enterprise BluePrints</a></li>
+<li><a href="http://javaworld.com/" title="articles on java technology…">javaworld.com</a></li>
+<li><a href="http://www.sei.cmu.edu/architecture/SEI_info.htm" title="SEI Software Architecture Methods and Techniques">SEI Software Architecture Methods and Techniques</a></li>
+
+	</ul>
+</li>
+
+<li id="text-4" class="widget widget_text">			<div class="textwidget">
+
+
+</div>
+		</li>
+<li><h2>Subscribe</h2>
+<ul>
+<li class="feed"><a href="http://techpassion.wordpress.com/feed/">Entries (RSS)</a></li>
+<li class="feed"><a href="http://techpassion.wordpress.com/comments/feed/">Comments (RSS)</a></li>
+</ul>
+</li>
+		</ul>
+	</div>
+	
+<div id="content">
+		<div class="navigation">
+		<div class="alignleft">« <a href="http://techpassion.wordpress.com/2009/05/29/jsf-interview-questions/" rel="prev">JSF Interview&nbsp;Questions</a></div>
+		<div class="alignright"><a href="http://techpassion.wordpress.com/2009/06/02/xhtml-css-javascript-web-developer-applicant-questions/" rel="next">XHTML, CSS &amp; JavaScript Web Developer Applicant&nbsp;Questions</a> »</div>
+	</div>
+	<div class="post-76 post type-post status-publish format-standard hentry category-hibernate-framework tag-hibernate" id="post-76">
+<h2><a href="http://techpassion.wordpress.com/2009/05/30/hibernate-interview-questions/" rel="bookmark" title="Permanent link to Hibernate Interview&nbsp;Questions">Hibernate Interview&nbsp;Questions</a></h2>
+
+		<p class="date">Posted by Admin on May 30, 2009</p>
+
+		<div class="entrytext">
+			<p><!-- 		@page { margin: 0.79in } 		P { margin-bottom: 0.08in } 		TD P { margin-bottom: 0in } 		TH P { margin-bottom: 0in } 		A:link { so-language: zxx } --><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">1.What is ORM ?</span></span></p>
+<p align="justify"><a name="KonaLink0"></a><a name="KonaLink1"></a><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">ORM stands for object/relational mapping. ORM is the automated persistence of objects in a </span></span><a href="http://www.developersbook.com/hibernate/interview-questions/hibernate-interview-questions-faqs.php#" target="undefined"><span style="color: rgb(255, 153, 0);"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><span style="font-weight: normal;">Java application</span></span></span></span></a><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"> to the tables in a </span></span><a href="http://www.developersbook.com/hibernate/interview-questions/hibernate-interview-questions-faqs.php#" target="undefined"><span style="color: rgb(255, 153, 0);"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><span style="font-weight: normal;">relational database</span></span></span></span></a><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">.</span></span></p>
+<p><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">2.What does ORM consists of ?</span></span></p>
+<p align="justify"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">An ORM solution consists of the followig four pieces:</span></span></p>
+<ul>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">API 	for performing basic CRUD operations </span></span></p>
+</li>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">API 	to express ries refering to classes </span></span></p>
+</li>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Facilities 	to specify metadata </span></span></p>
+</li>
+<li><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Optimization 	facilities : dirty checking,lazy associations fetching </span></span></li>
+</ul>
+<p><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">3.What are the ORM levels ?</span></span></p>
+<p align="justify"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">The ORM levels are:</span></span></p>
+<ul>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Pure 	relational (stored procedure.) </span></span></p>
+</li>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Light 	objects mapping (JDBC) </span></span></p>
+</li>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Medium 	object mapping </span></span></p>
+</li>
+<li><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Full object 	Mapping (composition,inheritance, polymorphism, persistence by 	reachability) </span></span></li>
+</ul>
+<p><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">4.What is Hibernate?</span></span></p>
+<p align="justify"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Hibernate
+ is a pure Java object-relational mapping (ORM) and persistence 
+framework that allows you to map plain old Java objects to relational 
+database tables using (XML) configuration files.Its purpose is to 
+relieve the developer from a significant amount of relational data 
+persistence-related programming tasks.</span></span></p>
+<p><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">5.Why do you need ORM tools like hibernate?</span></span></p>
+<p align="justify"><a name="KonaLink2"></a><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">The main advantage of ORM like hibernate is that it shields developers from messy </span></span><a href="http://www.developersbook.com/hibernate/interview-questions/hibernate-interview-questions-faqs.php#" target="undefined"><span style="color: rgb(255, 153, 0);"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><span style="font-weight: normal;">SQL</span></span></span></span></a><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">. Apart from this, ORM provides following benefits:</span></span></p>
+<ul>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>Improved 	productivity</strong> </span></span></p>
+<ul>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">High-level 		object-oriented API </span></span></p>
+</li>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Less 		Java code to write </span></span></p>
+</li>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">No 		SQL to write </span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>Improved 	performance</strong> </span></span></p>
+<ul>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Sophisticated 		caching </span></span></p>
+</li>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Lazy 		loading </span></span></p>
+</li>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Eager 		loading </span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>Improved 	maintainability</strong> </span></span></p>
+<ul>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">A 		lot less code to write </span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>Improved 	portability</strong> </span></span></p>
+<ul>
+<li><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">ORM 		framework generates database-specific SQL for you </span></span></li>
+</ul>
+</li>
+</ul>
+<p><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">6.What Does Hibernate Simplify?</span></span></p>
+<p align="justify"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Hibernate simplifies:</span></span></p>
+<ul>
+<li>
+<p style="margin-bottom: 0pt;"><a name="KonaLink3"></a><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Saving 	and retrieving </span></span><a href="http://www.developersbook.com/hibernate/interview-questions/hibernate-interview-questions-faqs.php#" target="undefined"><span style="color: rgb(255, 153, 0);"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><span style="font-weight: normal;">your 	domain</span></span></span></span></a><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"> objects </span></span></p>
+</li>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Making 	database column and table name changes </span></span></p>
+</li>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Centralizing 	pre save and post retrieve logic </span></span></p>
+</li>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Complex 	joins for retrieving related items </span></span></p>
+</li>
+<li><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Schema 	creation from object model </span></span></li>
+</ul>
+<p><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">7.What is the need for Hibernate xml mapping file? </span></span></p>
+<p align="justify"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Hibernate
+ mapping file tells Hibernate which tables and columns to use to load 
+and store objects. Typical mapping file look as follows:</span></span></p>
+<p><img src="Hibernate%20Interview%20Questions%20%C2%AB%20Tech%20Passion_files/hbm-mapping.png" alt="Hibernate Mapping file" width="483" align="bottom" border="0" height="273"></p>
+<p><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">8.What are the most common methods of Hibernate configuration?</span></span></p>
+<p align="justify"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">The most common methods of Hibernate configuration are:</span></span></p>
+<ul>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Programmatic 	configuration </span></span></p>
+</li>
+<li><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">XML 	configuration (</span></span><code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">hibernate.cfg.xml</span></span></code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">) </span></span></li>
+</ul>
+<p><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">9.What are the important tags of hibernate.cfg.xml?</span></span></p>
+<p align="justify"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">An
+ Action Class is an adapter between the contents of an incoming HTTP 
+rest and the corresponding business logic that should be executed to 
+process this rest.</span></span></p>
+<p><img src="Hibernate%20Interview%20Questions%20%C2%AB%20Tech%20Passion_files/hbm-config.png" alt="hibernate.cfg.xml" width="616" align="bottom" border="0" height="372"></p>
+<p><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">10.What are the Core interfaces are of Hibernate framework?</span></span></p>
+<table dir="ltr" width="9" align="right" border="0" cellpadding="2" cellspacing="0">
+<col width="5">
+<tbody>
+<tr>
+<td width="5"></td>
+</tr>
+</tbody>
+</table>
+<p align="justify"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">The
+ five core interfaces are used in just about every Hibernate 
+application. Using these interfaces, you can store and retrieve 
+persistent objects and control transactions.</span></span></p>
+<ul>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Session 	interface </span></span></p>
+</li>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">SessionFactory 	interface </span></span></p>
+</li>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Configuration 	interface </span></span></p>
+</li>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Transaction 	interface </span></span></p>
+</li>
+<li><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Query and 	Criteria interfaces </span></span></li>
+</ul>
+<p><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">11.What role does the Session interface play in Hibernate?</span></span></p>
+<p align="justify"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">The
+ Session interface is the primary interface used by Hibernate 
+applications. It is a single-threaded, short-lived object representing a
+ conversation between the application and the persistent store. It 
+allows you to create query objects to retrieve persistent objects.</span></span></p>
+<p><code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Session session = sessionFactory.openSession();</span></span></code></p>
+<p align="justify"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>Session interface role</strong>:</span></span></p>
+<ul>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Wraps 	a JDBC connection </span></span></p>
+</li>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Factory 	for Transaction </span></span></p>
+</li>
+<li><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Holds
+ a 	mandatory (first-level) cache of persistent objects, used when 	
+navigating the object graph or looking up objects by identifier </span></span></li>
+</ul>
+<p><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">12.What role does the SessionFactory interface play in Hibernate?</span></span></p>
+<p align="justify"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">The
+ application obtains Session instances from a SessionFactory. There is 
+typically a single SessionFactory for the whole application—created 
+during application initialization. The SessionFactory caches generate 
+SQL statements and other mapping metadata that Hibernate uses at 
+runtime. It also holds cached data that has been read in one unit of 
+work and may be reused in a future unit of work</span></span></p>
+<p><code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">SessionFactory sessionFactory = configuration.buildSessionFactory();</span></span></code></p>
+<table dir="ltr" width="7" align="right" bgcolor="#fafafa" border="0" cellpadding="0" cellspacing="0">
+<col width="7">
+<tbody>
+<tr>
+<td width="7" height="2"></td>
+</tr>
+</tbody>
+</table>
+<p>13.What is the general flow of Hibernate communication with RDBMS?</p>
+<p align="justify"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">The general flow of Hibernate communication with RDBMS is :</span></span></p>
+<ul>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Load 	the Hibernate configuration file and create configuration object. It 	will automatically load all hbm mapping files </span></span></p>
+</li>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Create 	session factory from configuration object </span></span></p>
+</li>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Get 	one session from this session factory </span></span></p>
+</li>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Create 	HQL Query </span></span></p>
+</li>
+<li><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Execute 	query to get list containing Java objects </span></span></li>
+</ul>
+<p><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">14.What is Hibernate Query Language (HQL)?</span></span></p>
+<p align="justify"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Hibernate
+ offers a query language that embodies a very powerful and flexible 
+mechanism to query, store, update, and retrieve objects from a database.
+ This language, the Hibernate query Language (HQL), is an 
+object-oriented extension to SQL.</span></span></p>
+<p align="justify">
+</p><p><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">15.How do you map Java Objects with Database tables?</span></span></p>
+<ul>
+<li>
+<p style="margin-bottom: 0pt;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">First 	we need to write Java domain objects (beans with setter and getter). 	The variables should be same as database columns. </span></span></p>
+</li>
+<li><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Write 	hbm.xml, where we map java class to table and database columns to 	Java class variables. </span></span></li>
+</ul>
+<p align="justify"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>Example</strong> :</span></span></p>
+<pre><span style="color: rgb(0, 128, 0);"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">&lt;hibernate-mapping&gt;</span></span></span>
+&nbsp; <span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><span style="color: rgb(0, 128, 0);">&lt;class</span> <span style="color: rgb(128, 0, 64);">name</span>=<span style="color: rgb(0, 0, 255);">"com.test.User"</span>&nbsp; <span style="color: rgb(128, 0, 64);">table</span>=<span style="color: rgb(0, 0, 255);">"user"</span><span style="color: rgb(0, 128, 0);">&gt;</span></span></span>
+&nbsp;&nbsp; <span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><span style="color: rgb(0, 128, 0);">&lt;property</span>&nbsp; <span style="color: rgb(128, 0, 64);">column</span>=<span style="color: rgb(0, 0, 255);">"USER_NAME"</span> <span style="color: rgb(128, 0, 64);">length</span>=<span style="color: rgb(0, 0, 255);">"255"</span></span></span>
+&nbsp;&nbsp; &nbsp;&nbsp; <span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><span style="color: rgb(128, 0, 64);">name</span>=<span style="color: rgb(0, 0, 255);">"userName"</span> <span style="color: rgb(128, 0, 64);">not-null</span>=<span style="color: rgb(128, 0, 64);">"true"</span>&nbsp; <span style="color: rgb(128, 0, 64);">type</span>=<span style="color: rgb(0, 0, 255);">"java.lang.String"</span><span style="color: rgb(0, 128, 0);">/&gt;</span></span></span>
+&nbsp;&nbsp; <span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><span style="color: rgb(0, 128, 0);">&lt;property</span>&nbsp; <span style="color: rgb(128, 0, 64);">column</span>=<span style="color: rgb(0, 0, 255);">"USER_PASSWORD"</span> <span style="color: rgb(128, 0, 64);">length</span>=<span style="color: rgb(0, 0, 255);">"255"</span></span></span>
+     <span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><span style="color: rgb(128, 0, 64);">name</span>=<span style="color: rgb(0, 0, 255);">"userPassword"</span> <span style="color: rgb(128, 0, 64);">not-null</span>=<span style="color: rgb(0, 0, 255);">"true"</span>&nbsp; <span style="color: rgb(128, 0, 64);">type</span>=<span style="color: rgb(0, 0, 255);">"java.lang.String"</span><span style="color: rgb(0, 128, 0);">/&gt;</span></span></span>
+&nbsp;<span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><span style="color: rgb(0, 128, 0);">&lt;/class&gt;</span></span></span>
+<span style="color: rgb(0, 128, 0);"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">&lt;/hibernate-mapping&gt;</span></span></span>
+
+ <span style="font-family: Times New Roman,serif;"><span style="font-size: small;">16.What’s the difference between load() and get()? </span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">load() vs. get() :-</span></span></pre>
+<table width="665" border="0" cellpadding="6" cellspacing="0">
+<col width="348">
+<col width="293">
+<tbody>
+<tr>
+<th width="348"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">load()</span></span></th>
+<th width="293"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">get()</span></span></th>
+</tr>
+<tr>
+<td width="348"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Only use the </span></span><code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">load()</span></span></code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"> method if you are sure that the object exists.</span></span></td>
+<td width="293"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">If you are not 			sure that the object exists, then use one of the </span></span><code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">get()</span></span></code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"> methods.</span></span></td>
+</tr>
+<tr>
+<td width="348"><code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">load()</span></span></code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"> method will throw an exception if the unique id is not found in 			the database.</span></span></td>
+<td width="293"><code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">get()</span></span></code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"> method will return null if the unique id is not found in the 			database.</span></span></td>
+</tr>
+<tr>
+<td width="348"><code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">load()</span></span></code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"> just returns a proxy by default and database won’t be hit until 			the proxy is first invoked.</span></span></td>
+<td width="293"><code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">get()</span></span></code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"> will hit the database immediately.</span></span></td>
+</tr>
+</tbody>
+</table>
+<pre> <span style="font-family: Times New Roman,serif;"><span style="font-size: small;">17.What is the difference between and merge and update ?</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Use </span></span><code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">update()</span></span></code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"> if you are sure that the session does not contain an already persistent instance with the same identifier, and </span></span><code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">merge()</span></span></code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"> if you want to merge your modifications at any time without consideration of the state of the session.</span></span>
+
+  <span style="font-family: Times New Roman,serif;"><span style="font-size: small;">18.How do you define sequence generated primary key in hibernate?</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Using &lt;generator&gt; tag.</span></span>
+ <span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>Example</strong>:-</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><span style="color: rgb(0, 128, 0);">&lt;id</span> <span style="color: rgb(128, 0, 64);">column</span>=<span style="color: rgb(0, 0, 255);">"USER_ID"</span> <span style="color: rgb(128, 0, 64);">name</span>=<span style="color: rgb(0, 0, 255);">"id"</span> <span style="color: rgb(128, 0, 64);">type</span>=<span style="color: rgb(0, 0, 255);">"java.lang.Long"</span><span style="color: rgb(0, 128, 0);">&gt; </span></span></span>
+&nbsp;   <span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><span style="color: rgb(0, 128, 0);">&lt;generator</span> <span style="color: rgb(128, 0, 64);">class</span>=<span style="color: rgb(0, 0, 255);">"sequence"</span><span style="color: rgb(0, 128, 0);">&gt; </span></span></span>
+     <span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><span style="color: rgb(0, 128, 0);">&lt;param</span> <span style="color: rgb(128, 0, 64);">name</span>=<span style="color: rgb(0, 0, 255);">"table"</span>&gt;SEQUENCE_NAME<span style="color: rgb(0, 128, 0);">&lt;/param&gt;</span></span></span>
+&nbsp; <span style="color: rgb(0, 128, 0);"> <span style="font-family: Times New Roman,serif;"><span style="font-size: small;">&lt;generator&gt;</span></span></span>
+<span style="color: rgb(0, 128, 0);"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">&lt;/id&gt;</span></span></span></pre>
+<table dir="ltr" width="15" align="right" bgcolor="#fafafa" border="0" cellpadding="0" cellspacing="0">
+<col width="15">
+<tbody>
+<tr>
+<td width="15" height="16"></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">19.Define cascade and inverse option in one-many mapping?</span></span></p>
+<pre style="margin-bottom: 0.2in;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">cascade - enable operations to cascade to child entities.</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">cascade="all|none|save-update|delete|all-delete-orphan"
+
+inverse - mark this collection as the "inverse" end of a bidirectional association.
+
+inverse="true|false"
+
+Essentially "inverse" indicates which end of a relationship should be ignored, so when persisting a parent who has a collection of children, should you ask the parent for its list of children, or ask the children who the parents are?</span></span>
+<a name="KonaLink01"></a><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">20.What do you mean by Named – </span></span><a href="http://www.developersbook.com/hibernate/interview-questions/hibernate-interview-questions-faqs-2.php#" target="undefined"><span style="color: rgb(255, 153, 0);"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>SQL query</strong></span></span></span></a><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">?</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Named SQL queries are defined in the mapping xml document and called wherever required.</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>Example:</strong></span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><span style="color: rgb(0, 128, 0);">&lt;sql-query </span><span style="color: rgb(128, 0, 64);">name</span> =<span style="color: rgb(0, 0, 255);"> "empdetails"</span>&gt;</span></span>
+&nbsp;&nbsp; <span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><span style="color: rgb(0, 128, 0);">&lt;return</span> <span style="color: rgb(128, 0, 64);">alias</span>=<span style="color: rgb(0, 0, 255);">"emp"</span> <span style="color: rgb(128, 0, 64);">class</span>=<span style="color: rgb(0, 0, 255);">"com.test.Employee"</span><span style="color: rgb(0, 128, 0);">/&gt;</span></span></span>
+<span style="color: rgb(255, 0, 255);">&nbsp; &nbsp;&nbsp;&nbsp; <span style="font-family: Times New Roman,serif;"><span style="font-size: small;">SELECT emp.EMP_ID AS {emp.empid},</span></span></span>
+<span style="color: rgb(255, 0, 255);">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-family: Times New Roman,serif;"><span style="font-size: small;">emp.EMP_ADDRESS AS {emp.address},</span></span></span>
+<span style="color: rgb(255, 0, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-family: Times New Roman,serif;"><span style="font-size: small;">emp.EMP_NAME AS {emp.name}</span></span></span>
+<span style="color: rgb(255, 0, 255);">      <span style="font-family: Times New Roman,serif;"><span style="font-size: small;">FROM Employee EMP WHERE emp.NAME LIKE :name</span></span></span>
+<span style="color: rgb(0, 128, 0);"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">&lt;/sql-query&gt;</span></span></span>
+
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Invoke Named Query :</span></span>
+
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><span style="color: rgb(128, 0, 64);">List </span>people = <span style="color: rgb(128, 0, 64);">session</span>.getNamedQuery(<span style="color: rgb(0, 0, 255);">"empdetails"</span>)</span></span>
+                     <span style="font-family: Times New Roman,serif;"><span style="font-size: small;">.setString(<span style="color: rgb(0, 0, 255);">"TomBrady"</span>, name)</span></span>
+                     <span style="font-family: Times New Roman,serif;"><span style="font-size: small;">.setMaxResults(50)</span></span>
+                     <span style="font-family: Times New Roman,serif;"><span style="font-size: small;">.list();</span></span>
+
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">21.How do you invoke Stored Procedures?</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><span style="color: rgb(0, 128, 0);">&lt;sql-query</span> <span style="color: rgb(128, 0, 64);">name</span>=<span style="color: rgb(0, 0, 255);">"selectAllEmployees_SP"</span> <span style="color: rgb(128, 0, 64);">callable</span>=<span style="color: rgb(0, 0, 255);">"true"</span><span style="color: rgb(0, 128, 0);">&gt;</span></span></span>
+<span style="color: rgb(0, 128, 0);"> <span style="font-family: Times New Roman,serif;"><span style="font-size: small;">&lt;return</span> <span style="color: rgb(128, 0, 64);">alias</span>=<span style="color: rgb(0, 0, 255);">"emp"</span> <span style="color: rgb(128, 0, 64);">class</span>=<span style="color: rgb(0, 0, 255);">"employee"</span><span style="color: rgb(0, 128, 0);">&gt;</span></span></span>
+&nbsp;  <span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><span style="color: rgb(0, 128, 0);">&lt;return-property</span> <span style="color: rgb(128, 0, 64);">name</span>=<span style="color: rgb(0, 0, 255);">"empid"</span> <span style="color: rgb(128, 0, 64);">column</span>=<span style="color: rgb(0, 0, 255);">"EMP_ID"</span><span style="color: rgb(0, 128, 0);">/&gt;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
+  <span style="color: rgb(128, 0, 64);"> </span><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><span style="color: rgb(0, 128, 0);">&lt;return-property</span> <span style="color: rgb(128, 0, 64);">name</span>=<span style="color: rgb(0, 0, 255);">"name"</span> <span style="color: rgb(128, 0, 64);">column</span>=<span style="color: rgb(0, 0, 255);">"EMP_NAME"</span><span style="color: rgb(0, 128, 0);">/&gt;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
+  <span style="color: rgb(0, 128, 0);"> <span style="font-family: Times New Roman,serif;"><span style="font-size: small;">&lt;return-property</span> <span style="color: rgb(128, 0, 64);">name</span>=<span style="color: rgb(0, 0, 255);">"address"</span> <span style="color: rgb(128, 0, 64);">column</span>=<span style="color: rgb(0, 0, 255);">"EMP_ADDRESS"</span><span style="color: rgb(0, 128, 0);">/&gt;</span></span></span>
+&nbsp;&nbsp;&nbsp; <span style="font-family: Times New Roman,serif;"><span style="font-size: small;">{ <span style="color: rgb(0, 0, 128);">? = call selectAllEmployees()</span> }</span></span>
+<span style="color: rgb(0, 128, 0);"> <span style="font-family: Times New Roman,serif;"><span style="font-size: small;">&lt;/return&gt;</span></span></span>
+<span style="color: rgb(0, 128, 0);"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">&lt;/sql-query&gt;</span></span></span>
+
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">22.Explain Criteria API</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Criteria is a simplified API for retrieving entities by composing Criterion objects. This is a very convenient approach for functionality like "search" screens where there is a variable number of conditions to be placed upon the result set.</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>Example</strong> :</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><span style="color: rgb(128, 0, 64);">List </span>employees = <span style="color: rgb(128, 0, 64);">session</span>.createCriteria(Employee.class)</span></span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-family: Times New Roman,serif;"><span style="font-size: small;">.add(Restrictions.like(<span style="color: rgb(0, 0, 255);">"name"</span>, <span style="color: rgb(0, 0, 255);">"a%"</span>) )</span></span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-family: Times New Roman,serif;"><span style="font-size: small;">.add(Restrictions.like(<span style="color: rgb(0, 0, 255);">"address"</span>, <span style="color: rgb(0, 0, 160);">"Boston"</span>))</span></span>
+                         <span style="font-family: Times New Roman,serif;"><span style="font-size: small;">.addOrder(Order.asc(<span style="color: rgb(0, 0, 255);">"name"</span>) )</span></span>
+                         <span style="font-family: Times New Roman,serif;"><span style="font-size: small;">.list();</span></span>
+
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">23.Define HibernateTemplate?</span></span>
+<code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">org.springframework.orm.hibernate.HibernateTemplate</span></span></code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"> is a helper class which provides different methods for querying/retrieving data from the database. It also converts checked HibernateExceptions into unchecked DataAccessExceptions.</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">24.What are the benefits does HibernateTemplate provide?</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">The benefits of HibernateTemplate are :</span></span></pre>
+<ul>
+<li>
+<pre><code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">HibernateTemplate</span></span></code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">, a Spring Template class simplifies interactions with Hibernate Session.</span></span></pre>
+</li>
+<li>
+<pre><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Common functions are simplified to single method calls.</span></span></pre>
+</li>
+<li>
+<pre><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Sessions are automatically closed.</span></span></pre>
+</li>
+<li>
+<pre style="margin-bottom: 0.2in;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Exceptions are automatically caught and converted to runtime exceptions.</span></span></pre>
+</li>
+</ul>
+<pre style="margin-bottom: 0.2in;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">25.How do you switch between relational databases without code changes?</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Using Hibernate SQL Dialects , we can switch databases. Hibernate will generate appropriate hql queries based on the dialect defined.</span></span>
+<a name="KonaLink11"></a><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">26.If you want to see the Hibernate generated </span></span><a href="http://www.developersbook.com/hibernate/interview-questions/hibernate-interview-questions-faqs-2.php#" target="undefined"><span style="color: rgb(255, 153, 0);"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>SQL  </strong></span></span></span></a><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">statements on console, what should we do?</span></span>
+<a name="KonaLink31"></a><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">In Hibernate </span></span><a href="http://www.developersbook.com/hibernate/interview-questions/hibernate-interview-questions-faqs-2.php#" target="undefined"><span style="color: rgb(255, 153, 0);"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><span style="font-weight: normal;">configuration file</span></span></span></span></a><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"> set as follows:</span></span>
+<code><span style="color: rgb(0, 128, 0);"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">&lt;property</span></span></span></code><code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"> </span></span></code><code><span style="color: rgb(128, 0, 64);"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">name</span></span></span></code><code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">=</span></span></code><code><span style="color: rgb(0, 0, 255);"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">"show_sql"</span></span></span></code><code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">&gt;true</span></span></code><code><span style="color: rgb(0, 128, 0);"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">&lt;/property&gt;</span></span></span></code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">
+
+27.What are derived properties?</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">The properties that are not mapped to a column, but calculated at runtime by evaluation of an expression are called derived properties. The expression can be defined using the formula attribute of the element.</span></span></pre>
+<table dir="ltr" width="9" align="right" border="0" cellpadding="2" cellspacing="0">
+<col width="5">
+<tbody>
+<tr>
+<td width="5"></td>
+</tr>
+</tbody>
+</table>
+<pre style="margin-bottom: 0.2in;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">28.What is component mapping in Hibernate?</span></span></pre>
+<ul>
+<li>
+<pre><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">A component is an object saved as a value, not as a reference</span></span></pre>
+</li>
+<li>
+<pre><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">A component can be saved directly without needing to declare interfaces or identifier properties</span></span></pre>
+</li>
+<li>
+<pre><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Required to define an empty constructor</span></span></pre>
+</li>
+<li>
+<pre style="margin-bottom: 0.2in;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Shared references not supported</span></span></pre>
+</li>
+</ul>
+<pre style="margin-bottom: 0.2in; text-align: justify;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>Example</strong>:</span></span>
+
+<img src="Hibernate%20Interview%20Questions%20%C2%AB%20Tech%20Passion_files/component-mapping.png" alt="Component Mapping" width="642" align="bottom" border="0" height="415">
+
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">29.What is the difference between sorted and ordered collection in hibernate?</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>sorted collection vs. order collection</strong> :-</span></span></pre>
+<table width="665" border="0" cellpadding="6" cellspacing="0">
+<col width="325">
+<col width="316">
+<tbody>
+<tr>
+<th width="325"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">sorted 			collection</span></span></th>
+<th width="316"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">order 			collection</span></span></th>
+</tr>
+<tr>
+<td width="325"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">A
+ sorted 			collection is sorting a collection by utilizing the sorting 	
+		features provided by the Java collections framework. The sorting 			
+occurs in the memory of JVM which running Hibernate, after the 			data 
+being read from database using java comparator.</span></span></td>
+<td width="316"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Order 			collection is sorting a collection by specifying the order-by 			clause for sorting this collection when retrieval.</span></span></td>
+</tr>
+<tr>
+<td width="325"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">If your 			collection is not large, it will be more efficient way to sort it.</span></span></td>
+<td width="316"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">If your 			collection is very large, it will be more efficient way to sort it 			.</span></span></td>
+</tr>
+</tbody>
+</table>
+<pre><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">31.What is the advantage of Hibernate over jdbc? </span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Hibernate Vs. JDBC :-</span></span></pre>
+<table width="665" border="0" cellpadding="6" cellspacing="0">
+<col width="323">
+<col width="318">
+<tbody>
+<tr>
+<th width="323"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">JDBC</span></span></th>
+<th width="318"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Hibernate</span></span></th>
+</tr>
+<tr>
+<td width="323"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">With
+ JDBC, 			developer has to write code to map an object model’s data 			
+representation to a relational data model and its corresponding 			
+database schema.</span></span></td>
+<td width="318"><a name="KonaLink02"></a><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Hibernate 			is flexible and powerful ORM solution to map Java classes to </span></span><a href="http://www.developersbook.com/hibernate/interview-questions/hibernate-interview-questions-faqs-3.php#" target="undefined"><span style="color: rgb(255, 153, 0);"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><span style="font-weight: normal;">database 			tables</span></span></span></span></a><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">. 			Hibernate itself takes care of this mapping using XML files so 			developer does not need to write code for this.</span></span></td>
+</tr>
+<tr>
+<td width="323"><a name="KonaLink13"></a><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">With 			JDBC, the automatic mapping of </span></span><a href="http://www.developersbook.com/hibernate/interview-questions/hibernate-interview-questions-faqs-3.php#" target="undefined"><span style="color: rgb(255, 153, 0);"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><span style="font-weight: normal;">Java 			objects</span></span></span></span></a><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"> with database tables and vice versa conversion is to be taken care 			of by the developer manually with lines of code.</span></span></td>
+<td width="318"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Hibernate
+ 			provides transparent persistence and developer does not need to 			
+write code explicitly to map database tables tuples to application 			
+objects during interaction with RDBMS.</span></span></td>
+</tr>
+<tr>
+<td width="323"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">JDBC
+ supports 			only native Structured Query Language (SQL). Developer has 
+to find 			out the efficient way to access database, i.e. to select 
+effective 			query from a number of queries to perform same task.</span></span></td>
+<td width="318"><a name="KonaLink21"></a><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Hibernate
+ 			provides a powerful query language Hibernate Query Language 			
+(independent from type of database) that is expressed in a 			familiar 
+SQL like syntax and includes full support for polymorphic 			queries. 
+Hibernate also supports native </span></span><a href="http://www.developersbook.com/hibernate/interview-questions/hibernate-interview-questions-faqs-3.php#" target="undefined"><span style="color: rgb(255, 153, 0);"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><span style="font-weight: normal;">SQL</span></span></span></span></a><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"> statements. It also selects an effective way to perform a database 			manipulation task for an application.</span></span></td>
+</tr>
+<tr>
+<td width="323"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Application
+ 			using JDBC to handle persistent data (database tables) having 			
+database specific code in large amount. The code written to map 			table
+ data to application objects and vice versa is actually to 			map table 
+fields to object properties. As table changed or 			database changed 
+then it’s essential to change object structure 			as well as to change 
+code written to map 			table-to-object/object-to-table.</span></span></td>
+<td width="318"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Hibernate
+ 			provides this mapping itself. The actual mapping between tables 			
+and application objects is done in XML files. If there is change 			in 
+Database or in any table then the only need to change XML file 			
+properties.</span></span></td>
+</tr>
+<tr>
+<td width="323"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">With
+ JDBC, it 			is developer’s responsibility to handle JDBC result set and
+ 			convert it to Java objects through code to use this persistent 			
+data in application. So with JDBC, mapping between Java objects 			and 
+database tables is done manually.</span></span></td>
+<td width="318"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Hibernate
+ 			reduces lines of code by maintaining object-table mapping itself 			
+and returns result to application in form of Java objects. It 			
+relieves programmer from manual handling of persistent data, hence 			
+reducing the development time and maintenance cost.</span></span></td>
+</tr>
+<tr>
+<td width="323"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">With JDBC, 			caching is maintained by hand-coding.</span></span></td>
+<td width="318"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Hibernate,
+ 			with Transparent Persistence, cache is set to application work 			
+space. Relational tuples are moved to this cache as a result of 			
+query. It improves performance if client application reads same 			data 
+many times for same write. Automatic Transparent Persistence 			allows 
+the developer to concentrate more on business logic rather 			than this 
+application code.</span></span></td>
+</tr>
+<tr>
+<td width="323"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">In JDBC there 			is no check that always every user has updated data. This check 			has to be added by the developer.</span></span></td>
+<td width="318"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Hibernate
+ 			enables developer to define version type field to application, due 	
+		to this defined field Hibernate updates version field of database 			
+table every time relational tuple is updated in form of Java class 			
+object to that table. So if two users retrieve same tuple and then 			
+modify it and one user save this modified tuple to database, 			version 
+is automatically updated for this tuple by Hibernate. When 			other user
+ tries to save updated tuple to database then it does 			not allow 
+saving it because this user does not have updated data.</span></span></td>
+</tr>
+</tbody>
+</table>
+<table dir="ltr" width="13" align="right" bgcolor="#fafafa" border="0" cellpadding="0" cellspacing="0">
+<col width="13">
+<tbody>
+<tr>
+<td width="13" height="2"></td>
+</tr>
+</tbody>
+</table>
+<pre style="margin-bottom: 0.2in;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">32.What are the Collection types in Hibernate ?</span></span></pre>
+<ul>
+<li>
+<pre><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Bag</span></span></pre>
+</li>
+<li>
+<pre><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Set</span></span></pre>
+</li>
+<li>
+<pre><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">List</span></span></pre>
+</li>
+<li>
+<pre><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Array</span></span></pre>
+</li>
+<li>
+<pre style="margin-bottom: 0.2in;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Map</span></span></pre>
+</li>
+</ul>
+<pre style="margin-bottom: 0.2in;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">33.What are the ways to express joins in HQL?</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">HQL provides four ways of expressing (inner and outer) joins:-</span></span></pre>
+<ul>
+<li>
+<pre><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">An <em>implicit</em> association join</span></span></pre>
+</li>
+<li>
+<pre><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">An ordinary join in the FROM clause</span></span></pre>
+</li>
+<li>
+<pre><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">A fetch join in the FROM clause.</span></span></pre>
+</li>
+<li>
+<pre style="margin-bottom: 0.2in;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">A <em>theta-style</em> join in the WHERE clause.</span></span></pre>
+</li>
+</ul>
+<pre style="margin-bottom: 0.2in;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">34.Define cascade and inverse option in one-many mapping?</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">cascade - enable operations to cascade to child entities.</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">cascade="all|none|save-update|delete|all-delete-orphan"
+
+inverse - mark this collection as the "inverse" end of a bidirectional association.
+
+inverse="true|false"
+
+Essentially "inverse" indicates which end of a relationship should be ignored, so when persisting a parent who has a collection of children, should you ask the parent for its list of children, or ask the children who the parents are?</span></span>
+
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">35.What is Hibernate proxy? </span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">The </span></span><code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">proxy</span></span></code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"> attribute enables lazy initialization of persistent instances of the class. Hibernate will initially return CGLIB proxies which implement the named interface. The actual persistent object will be loaded when a method of the proxy is invoked.</span></span></pre>
+<table dir="ltr" width="17" align="right" bgcolor="#fafafa" border="0" cellpadding="0" cellspacing="0">
+<col width="17">
+<tbody>
+<tr>
+<td width="17" height="2"></td>
+</tr>
+</tbody>
+</table>
+<pre style="margin-bottom: 0.2in;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">36.How can Hibernate be configured to access an instance variable directly and not through a setter method ?</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">By mapping the property with access="field" in Hibernate metadata. This forces hibernate to bypass the setter method and access the instance variable directly while initializing a newly loaded object.</span></span>
+
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">37.How can a whole class be mapped as immutable?</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Mark the class as mutable="false" (Default is true),. This specifies that instances of the class are (not) mutable. Immutable classes, may not be updated or deleted by the application.</span></span>
+
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">38.What is the use of dynamic-insert and dynamic-update attributes in a class mapping?</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Criteria is a simplified API for retrieving entities by composing Criterion objects. This is a very convenient approach for functionality like "search" screens where there is a variable number of conditions to be placed upon the result set.</span></span></pre>
+<ul>
+<li>
+<pre><code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">dynamic-update</span></span></code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"> (defaults to </span></span><code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">false</span></span></code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">): Specifies that </span></span><code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">UPDATE</span></span></code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"> SQL should be generated at runtime and contain only those columns whose values have changed</span></span></pre>
+</li>
+<li>
+<pre style="margin-bottom: 0.2in;"><code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">dynamic-insert</span></span></code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"> (defaults to </span></span><code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">false</span></span></code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">): Specifies that </span></span><code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">INSERT</span></span></code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"> SQL should be generated at runtime and contain only the columns whose values are not null.</span></span></pre>
+</li>
+</ul>
+<pre style="margin-bottom: 0.2in;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">39.What do you mean by fetching strategy ?</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">A </span></span><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><em>fetching strategy</em></span></span><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"> is the strategy Hibernate will use for retrieving associated objects if the application needs to navigate the association. Fetch strategies may be declared in the O/R mapping metadata, or over-ridden by a particular HQL or </span></span><code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Criteria</span></span></code><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"> query.</span></span>
+
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">40.What is automatic dirty checking?</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Automatic dirty checking is a feature that saves us the effort of explicitly asking Hibernate to update the database when we modify the state of an object inside a transaction.</span></span>
+
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">41.What is transactional write-behind?</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Hibernate uses a sophisticated algorithm to determine an efficient ordering that avoids database foreign key constraint violations but is still sufficiently predictable to the user. This feature is called transactional write-behind.</span></span>
+
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">42.What are Callback interfaces?</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Callback interfaces allow the application to receive a notification when something interesting happens to an object—for example, when an object is loaded, saved, or deleted. Hibernate applications don't need to implement these callbacks, but they're useful for implementing certain kinds of generic functionality.</span></span>
+
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">43.What are the types of Hibernate instance states ?</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Three types of instance states:</span></span></pre>
+<ul>
+<li>
+<pre><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Transient -The instance is not associated with any persistence context</span></span></pre>
+</li>
+<li>
+<pre><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Persistent -The instance is associated with a persistence context</span></span></pre>
+</li>
+<li>
+<pre style="margin-bottom: 0.2in;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Detached -The instance was associated with a persistence context which has been closed – currently not associated</span></span></pre>
+</li>
+</ul>
+<pre style="margin-bottom: 0.2in;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">44.What are the differences between EJB 3.0 &amp; Hibernate</span></span>
+
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Hibernate Vs EJB 3.0 :-</span></span></pre>
+<table width="665" border="0" cellpadding="6" cellspacing="0">
+<col width="330">
+<col width="311">
+<tbody>
+<tr>
+<th width="330"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Hibernate</span></span></th>
+<th width="311"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">EJB 3.0</span></span></th>
+</tr>
+<tr>
+<td width="330"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>Session</strong>–Cache 			or collection of loaded objects relating to a single unit of work</span></span></td>
+<td width="311"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>Persistence 			Context</strong>-Set of entities that can be managed by a given 			EntityManager is defined by a persistence unit</span></span></td>
+</tr>
+<tr>
+<td width="330"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>XDoclet 			Annotations</strong> used to support Attribute Oriented Programming</span></span></td>
+<td width="311"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>Java 5.0 			Annotations</strong> used to support Attribute Oriented Programming</span></span></td>
+</tr>
+<tr>
+<td width="330"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>Defines HQL</strong> for expressing queries to the database</span></span></td>
+<td width="311"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>Defines EJB 			QL</strong> for expressing queries</span></span></td>
+</tr>
+<tr>
+<td width="330"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>Supports 			Entity Relationships</strong> through mapping files and annotations in 			JavaDoc</span></span></td>
+<td width="311"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>Support 			Entity Relationships</strong> through Java 5.0 annotations</span></span></td>
+</tr>
+<tr>
+<td width="330"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>Provides a 			Persistence Manager API</strong> exposed via the Session, Query, 			Criteria, and Transaction API</span></span></td>
+<td width="311"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>Provides 			and Entity Manager Interface</strong> for managing CRUD operations for 			an Entity</span></span></td>
+</tr>
+<tr>
+<td width="330"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>Provides 			callback support</strong> through lifecycle, interceptor, and 			validatable interfaces</span></span></td>
+<td width="311"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>Provides 			callback support</strong> through Entity Listener and Callback methods</span></span></td>
+</tr>
+<tr>
+<td width="330"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>Entity 			Relationships are unidirectional</strong>. Bidirectional relationships 			are implemented by two unidirectional relationships</span></span></td>
+<td width="311"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;"><strong>Entity 			Relationships are bidirectional or unidirectional</strong></span></span></td>
+</tr>
+</tbody>
+</table>
+<pre style="margin-bottom: 0.2in;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">45.What are the types of inheritance models in Hibernate?</span></span>
+<span style="font-family: Times New Roman,serif;"><span style="font-size: small;">There are three types of inheritance models in Hibernate:</span></span></pre>
+<ul>
+<li>
+<pre><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Table per class hierarchy</span></span></pre>
+</li>
+<li>
+<pre><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Table per subclass</span></span></pre>
+</li>
+<li>
+<pre style="margin-bottom: 0.2in;"><span style="font-family: Times New Roman,serif;"><span style="font-size: small;">Table per concrete class</span></span></pre>
+</li>
+</ul>
+<p style="margin-bottom: 0pt;">
+
+<!-- wpcom_below_post -->
+</p><div style="margin-bottom: 10px;" align="center">
+<script type="text/javascript">
+GA_googleAddAttr("AdOpt", "1");
+GA_googleAddAttr("Origin", "other");
+GA_googleAddAttr("theme_bg", "fafcff"); GA_googleAddAttr("theme_text", "2a2a2a"); GA_googleAddAttr("theme_link", "303030"); GA_googleAddAttr("LangId", "1");
+GA_googleAddAttr("Autotag", "technology"); GA_googleAddAttr("Tag", "hibernate-framework"); GA_googleAddAttr("Tag", "hibernate"); 
+GA_googleFillSlot("wpcom_below_post");
+</script><script src="Hibernate%20Interview%20Questions%20%C2%AB%20Tech%20Passion_files/ads"></script>
+</div></div>
+
+						<p class="postmetadata">
+				 		This entry was posted on May 30, 2009 at 12:25 pm						and is filed under <a href="http://en.wordpress.com/tag/hibernate-framework/" title="View all posts in Hibernate Framework" rel="category tag">Hibernate Framework</a>.
+						Tagged: <a href="http://en.wordpress.com/tag/hibernate/" rel="tag">Hibernate</a>. 						You can follow any responses to this entry through the <a href="http://techpassion.wordpress.com/2009/05/30/hibernate-interview-questions/feed/">RSS 2.0</a> feed. 
+						
+													You can <a href="#respond">leave a response</a>, or <a href="http://techpassion.wordpress.com/2009/05/30/hibernate-interview-questions/trackback/" rel="trackback">trackback</a> from your own site.
+						
+									</p>		
+		
+	</div>
+		
+	<div id="wpl-likebox"><div id="wpl-button"><a href="http://techpassion.wordpress.com/2009/05/30/hibernate-interview-questions/?like=1&amp;_wpnonce=89114d910a" title="I like this post" class="like needs-login" rel="nofollow"><span>Like</span></a></div><div id="wpl-count">Be the first to like this post.</div>					<div style="display: block;" id="wpl-mustlogin"> 						<form action="http://techpassion.wordpress.com/wp-login.php" method="post"> 							<p>Just one more step to like this post:</p> 							<label><span style="display: block;">Username</span> <input name="log" id="user_login" class="input" size="20" tabindex="80" type="text"></label> 							<label><span style="display: block;">Password</span> <input name="pwd" id="user_pass" class="input" value="" size="20" tabindex="81" type="password"></label> 							<input name="wp-submit" id="wp-submit" class="button-primary" value="Log In" tabindex="82" type="submit"> 							<input name="redirect_to" value="http://techpassion.wordpress.com/2009/05/30/hibernate-interview-questions/?like=1" type="hidden"> 							<input name="wpl_rand" value="3d214ef48d" type="hidden"> 							<p>Not a member yet? <a href="http://wordpress.com/signup/?ref=likebox" id="wpl-signup-link">Sign up with WordPress.com</a></p> 						</form> 					</div> 				</div><h3 id="comments">One Response to “Hibernate Interview&nbsp;Questions”</h3> 
+ 
+<ol class="commentlist">
+	<li class="comment even thread-even depth-1" id="comment-41">
+	<div class="comment-author vcard">
+	<img id="grav-f0bf1e91e74ae9f77e51ae4309f2f8d5-0" alt="" src="Hibernate%20Interview%20Questions%20%C2%AB%20Tech%20Passion_files/f0bf1e91e74ae9f77e51ae4309f2f8d5.png" class="avatar avatar-32 grav-hashed grav-hijack" width="32" height="32">	<h3 class="commenttitle"><cite class="fn">amit</cite> <span class="says">said</span></h3>
+	</div>
+	
+	<small class="comment-meta commentmetadata"><a href="http://techpassion.wordpress.com/2009/05/30/hibernate-interview-questions/#comment-41">
+	December 11, 2009 at 10:28 am</a> </small>
+	
+	<p>Cant See text on right hand side in many Questions. Please format HTML better way.</p>
+
+	<div class="reply">
+	<a class="comment-reply-link" href="http://techpassion.wordpress.com/2009/05/30/hibernate-interview-questions/?replytocom=41#respond" onclick='return addComment.moveForm("comment-41", "41", "respond", "76")'>Reply</a>	</div>
+</li>
+</ol>
+ 
+<div class="navigation">
+<div class="alignleft"></div>
+<div class="alignright"></div>
+</div>
+
+									<div id="respond">
+				<h3 id="reply-title">Leave a Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://techpassion.wordpress.com/2009/05/30/hibernate-interview-questions/#respond" style="display: none;">Cancel reply</a></small></h3>
+									<form action="http://techpassion.wordpress.com/wp-comments-post.php" method="post" id="commentform">
+																			<p class="comment-notes">Your email address will not be published. Required fields are marked <span class="required">*</span></p>							<p class="comment-form-author"><label for="author">Name</label> <span class="required">*</span><input id="author" name="author" size="30" aria-required="true" type="text"></p>
+<p class="comment-form-email"><label for="email">Email</label> <span class="required">*</span><input id="email" name="email" size="30" aria-required="true" type="text"></p>
+<p class="comment-form-url"><label for="url">Website</label><input id="url" name="url" size="30" type="text"></p>
+												<p class="comment-form-comment"><label for="comment">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>						<p class="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a
+ href="" title=""&gt; &lt;abbr title=""&gt; &lt;acronym title=""&gt; 
+&lt;b&gt; &lt;blockquote cite=""&gt; &lt;cite&gt; &lt;code&gt; 
+&lt;pre&gt; &lt;del datetime=""&gt; &lt;em&gt; &lt;i&gt; &lt;q 
+cite=""&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
+							<input name="submit" id="submit" value="Post Comment" type="submit">
+							<input name="comment_post_ID" value="76" id="comment_post_ID" type="hidden">
+<input name="comment_parent" id="comment_parent" value="0" type="hidden">
+						</p>
+						
+<input name="genseq" value="1301937309" type="hidden">
+<p><input name="subscribe" id="subscribe" value="subscribe" style="width: auto;" tabindex="6" type="checkbox"> <label class="subscribe-label" id="subscribe-label" for="subscribe">Notify me of follow-up comments via email.</label></p><p><input name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto;" tabindex="7" type="checkbox"> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog">Subscribe to this site by email</label></p><input name="sub-type" value="comment-form-text2" type="hidden"><p style="display: none;"><input id="akismet_comment_nonce" name="akismet_comment_nonce" value="5fb5078b4d" type="hidden"></p>					</form>
+							</div><!-- #respond -->
+						<div class="bottomnavigation">
+			<div class="alignleft">« <a href="http://techpassion.wordpress.com/2009/05/29/jsf-interview-questions/" rel="prev">JSF Interview&nbsp;Questions</a></div>
+			<div class="alignright"><a href="http://techpassion.wordpress.com/2009/06/02/xhtml-css-javascript-web-developer-applicant-questions/" rel="next">XHTML, CSS &amp; JavaScript Web Developer Applicant&nbsp;Questions</a> »</div>
+		</div>
+	
+</div>
+
+</div>
+<div class="clearingdiv">&nbsp;</div>
+</div>
+
+<div id="footer">
+<a href="http://wordpress.com/?ref=footer" rel="generator">Blog at WordPress.com</a>. | Theme: <a href="http://theme.wordpress.com/themes/andreas09/">Andreas09</a> by <a href="http://andreasviklund.com/" rel="designer">Andreas Viklund</a>.</div>
+
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>	<script type="text/javascript">
+	/* <![CDATA[ */
+		jQuery( function() {
+			
+			jQuery('#wpl-button > a.like').click( function(e) {
+				e.preventDefault();
+				
+				jQuery('#wpl-mustlogin').remove();
+
+				jQuery.post( 'http://techpassion.wordpress.com/wp-admin/admin-ajax.php', { 
+					'action': 'wpl_record_stat',
+					'stat_name': 'loggedout_like_click'
+				} );
+
+				var tenMins = new Date();
+				tenMins.setTime( tenMins.getTime() + 600000 );
+				document.cookie = 'wpl_rand=3d214ef48d; expires=' + tenMins.toGMTString() + '; domain=wordpress.com; path=/;';
+				
+				jQuery('#wpl-count').after( '\
+					<div id="wpl-mustlogin"> \
+						<form action="http://techpassion.wordpress.com/wp-login.php" method="post"> \
+							<p>Just one more step to like this post:</p> \
+							<label><span>Username</span> <input type="text" name="log" id="user_login" class="input" value="" size="20" tabindex="80" /></label> \
+							<label><span>Password</span> <input type="password" name="pwd" id="user_pass" class="input" value="" size="20" tabindex="81" /></label> \
+							<input type="submit" name="wp-submit" id="wp-submit" class="button-primary" value="Log In" tabindex="82" /> \
+							<input type="hidden" name="redirect_to" value="http://techpassion.wordpress.com/2009/05/30/hibernate-interview-questions/?like=1" /> \
+							<input type="hidden" name="wpl_rand" value="3d214ef48d" /> \
+							<p>Not a member yet? <a href="http://wordpress.com/signup/?ref=likebox" id="wpl-signup-link">Sign up with WordPress.com</a></p> \
+						</form> \
+					</div> \
+				');
+				
+				jQuery('#wpl-mustlogin').hide().slideDown('fast');
+			} );
+			
+			jQuery('#wpl-mustlogin input.input').live( 'focus', function() {
+				jQuery(this).prev().hide();
+			}).live( 'blur', function() {
+				if ( jQuery(this).val() == '' )
+					jQuery(this).prev().show();
+			});
+			
+			jQuery('#wpl-mustlogin input#wp-submit').live( 'click', function(e) {
+				e.preventDefault();
+				
+				jQuery.post( 'http://techpassion.wordpress.com/wp-admin/admin-ajax.php', { 
+					'action': 'wpl_record_stat',
+					'stat_name': 'loggedout_login_submit'
+				}, function() {
+					jQuery('#wpl-mustlogin form').submit();
+				} );
+			});			
+			
+			jQuery('#wpl-mustlogin a#wpl-signup-link').live( 'click', function(e) {
+				e.preventDefault();
+				
+				var link = jQuery(this).attr('href');
+				
+				jQuery.post( 'http://techpassion.wordpress.com/wp-admin/admin-ajax.php', { 
+					'action': 'wpl_record_stat',
+					'stat_name': 'loggedout_signup_click'
+				}, function() {
+					location.href = link;
+				} );
+			});					
+			
+		});
+	/* ]]> */
+	</script>
+<script type="text/javascript">_qoptions={qacct:'p-18-mFEk4J448M',labels:'language.en,type.wpcom,posttag.hibernate'};</script>
+<script type="text/javascript" src="Hibernate%20Interview%20Questions%20%C2%AB%20Tech%20Passion_files/quant.js"></script>
+<noscript><p><img class="robots-nocontent" src="http://pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif?labels=language.en%2Ctype.wpcom%2Cposttag.hibernate" style="display:none" height="1" width="1" alt="" /></p></noscript>
+<script type="text/javascript" src="Hibernate%20Interview%20Questions%20%C2%AB%20Tech%20Passion_files/gprofiles.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WPGroHo = {
+	my_hash: ""
+};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Hibernate%20Interview%20Questions%20%C2%AB%20Tech%20Passion_files/wpgroho.js"></script>
+	<div style="display: none;">
+	<div class="grofile-hash-map-f0bf1e91e74ae9f77e51ae4309f2f8d5">
+	</div>
+	</div>
+<script type="text/javascript">_acseed='Nm01fCNhbSRLQXRNZnsmLHcpIXMudT5scCRsNDkzMl0gfUUocVU5eWUseT53aWtiM1hFdzVUfStTWUk1OUZdMS5eOWxEKTFjP2dmUFgxeXtJTFVQdnsmbHBjN3VYPlFuSFRSRm1YZXZzTHpkPDdKdT9VP28uYmFAYjY7IVgjY2ho';</script>
+<script type="text/javascript" src="Hibernate%20Interview%20Questions%20%C2%AB%20Tech%20Passion_files/beacon.js"></script><script type="text/javascript">try{COMSCORE.beacon({c1:2,c2:7518284});}catch(e){}</script><noscript><p class="robots-nocontent"><img src="http://b.scorecardresearch.com/p?cj=1c1=2&#038;c2=7518284" alt="" style="display:none" width="1" height="1" /></p></noscript><script src="Hibernate%20Interview%20Questions%20%C2%AB%20Tech%20Passion_files/w.js" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({'blog':'5988916','v':'wpcom','user_id':'0','post':'76','subd':'techpassion'});
+ex_go({'crypt':'RDY2ZWNfUWVLOWJvdDlOLXVaQ0I1QzVGUDFLZkRxUTJlLixnW3MmJm0rZl90dkRna3BoP1hWd1RqNz92cj9Tcl1EZDYxLlJuWi45bWp+W0tdfFI0enJFOHpGWDhBOHlodjF+PUppYng3MmFmVU9mUyZEflV4fnpDb2NzXU5IdGxfXzQwQXY1dDNULDJ0TkJDaUtYMlVoby9+Sz9odCssJkc5dEtyaWF3YmNwVGk2VXhuZ3V5Qld8a2c9UnpzSXh2P1A0cnJ0c3xULXoxLllfWTIvS20yLk5TekRwTzl+LU9tODVHKzNmSkM2JkgwN2dxNC4rV0duOF95JnAuK1VENFh3WDkwMUJvY0l1QThWKy5JTCxqOE5qbzh+QWlhUUdSOCU1Sy9jMy5YMEhLXTBjJkVERWtZVVQveThqUnBXZXxwXWd6WS5RbnFmX1ouOUo2UmxlP2IsbHxaKzNwcXhafjYvLytPVGEmL3dudGNhflM='});
+addLoadEvent(function(){linktracker_init('5988916',76);});
+	</script><img id="wpstats" src="Hibernate%20Interview%20Questions%20%C2%AB%20Tech%20Passion_files/g.gif" alt=""><img id="wpstats2" src="Hibernate%20Interview%20Questions%20%C2%AB%20Tech%20Passion_files/g_002.gif" alt="" style="display: none;">
+
+</body></html>
